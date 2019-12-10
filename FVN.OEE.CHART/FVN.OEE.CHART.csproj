@@ -45,10 +45,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lime.Protocol, Version=0.8.107.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lime.Protocol.0.8.107\lib\net461\Lime.Protocol.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Dataflow.4.9.0\lib\netstandard2.0\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -98,9 +112,6 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -167,6 +178,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Commons\CodeUtility.cs" />
+    <Compile Include="Commons\mFunction.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -176,8 +189,45 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OEE\OEE.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OEE.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OEE\OEE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OEE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OEE\OEE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OEE.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VNT86\sp_FinanceDAByProduct_Result.cs">
+      <DependentUpon>VNT86.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VNT86\sp_FinanceDAGet_Result.cs">
+      <DependentUpon>VNT86.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VNT86\VNT86.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VNT86.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VNT86\VNT86.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VNT86.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VNT86\VNT86.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VNT86.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\DataPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -188,10 +238,34 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Chart\chart.js" />
+    <Content Include="Content\Chart\date.format.js" />
+    <Content Include="Content\Chart\global.js" />
+    <Content Include="Content\Chart\lib-trend.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\OEE\OEE.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OEE.edmx</DependentUpon>
+      <LastGenOutput>OEE.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OEE\OEE.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OEE.edmx</DependentUpon>
+      <LastGenOutput>OEE.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\VNT86\VNT86.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VNT86.edmx</DependentUpon>
+      <LastGenOutput>VNT86.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\VNT86\VNT86.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VNT86.edmx</DependentUpon>
+      <LastGenOutput>VNT86.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -204,7 +278,25 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <EntityDeploy Include="Models\VNT86\VNT86.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VNT86.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\VNT86\VNT86.edmx.diagram">
+      <DependentUpon>VNT86.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\OEE\OEE.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OEE.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\OEE\OEE.edmx.diagram">
+      <DependentUpon>OEE.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Content\Chart\export-data.js" />
+    <Content Include="Content\Chart\exporting.js" />
+    <Content Include="Content\Chart\highcharts-more.js" />
+    <Content Include="Content\Chart\highcharts.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -250,6 +342,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -263,6 +356,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

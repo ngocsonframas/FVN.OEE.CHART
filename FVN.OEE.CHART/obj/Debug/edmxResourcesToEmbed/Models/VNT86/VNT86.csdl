@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VNT86Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="VNT86Entities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_FinanceDAByProduct" ReturnType="Collection(VNT86Model.sp_FinanceDAByProduct_Result)">
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_FinanceDAGet" ReturnType="Collection(VNT86Model.sp_FinanceDAGet_Result)" />
+  </EntityContainer>
+  <ComplexType Name="sp_FinanceDAByProduct_Result">
+    <Property Type="String" Name="C032" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="Qty" Nullable="true" />
+    <Property Type="Decimal" Name="AmoQty" Nullable="false" Precision="18" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="sp_FinanceDAGet_Result">
+    <Property Type="String" Name="Brand" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ProductCode" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="AmoQty" Nullable="false" Precision="18" Scale="3" />
+    <Property Type="Double" Name="Qty" Nullable="true" />
+    <Property Type="Decimal" Name="Percent" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+</Schema>

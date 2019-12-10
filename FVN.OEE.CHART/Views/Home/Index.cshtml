@@ -1,17 +1,15 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-
-<main>
-    <div class="row">
-        <div class="col-md-6">
-            <div id="plan-oee"></div>
-        </div>
-        <div class="col-md-6">
-            <div id="main-production"></div>
-        </div>
-        <div class="col-md-6">
+<div class="row">
+    <div class="col-md-6 mt-2">
+        <div id="plan-oee"></div>
+    </div>
+    <div class="col-md-6 mt-2">
+        <div id="main-production"></div>
+    </div>
+    <div class="col-md-6 mt-2">
+        <div class="row">
             <div class="col-md-4">
                 <div id="availability"></div>
             </div>
@@ -22,38 +20,60 @@
                 <div id="quality"></div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div id="main-production"></div>
-        </div>
     </div>
-</main>
+    <div class="col-md-6 mt-2">
+        <div id="heel-counter"></div>
+    </div>
+</div>
 
 @section scripts {
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/data.js"></script>
-    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="~/Content/Chart/highcharts.js"></script>
+    <script src="~/Content/Chart/highcharts-more.js"></script>
+    <script src="~/Content/Chart/exporting.js"></script>
+    <script src="~/Content/Chart/export-data.js"></script>
     <script type="text/javascript">
         // Create the chart main-production
         Highcharts.chart('main-production', {
             chart: {
+                type: 'column',
+            },
+            title: {
+                text: '<h1><b>MAIN PRODUCTION</b></h1>'
+            },
+            subtitle: {
+                text: 'A, P, Q of Main Production'
+            },
+            yAxis: {
+                title: {
+                    text: 'Total percent OEE'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+            },
+            series: [
+                {
+                    name: "OEE",
+                    colorByPoint: true,
+                    data:  @Html.Raw(ViewBag.dataPointsColumns)
+                }
+            ],
+            drilldown: {
+                series: @Html.Raw(ViewBag.dataPointsColumns)
+            }
+        });
+
+        // Create the chart heel counter
+        Highcharts.chart('heel-counter', {
+            chart: {
                 type: 'column'
             },
             title: {
-                text: 'A, P, Q of Main Production'
+                text: '<h1><b>HEEL COUNTER</b></h1>'
             },
             subtitle: {
-                //text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
-            },
-            accessibility: {
-                announceNewData: {
-                    enabled: true
-                }
-            },
-            xAxis: {
-                type: 'category'
+                text: 'Average Cycle Time'
             },
             yAxis: {
                 title: {
@@ -61,24 +81,10 @@
                 }
 
             },
-            legend: {
-                enabled: false
-            },
-            plotOptions: {
-                series: {
-                    borderWidth: 0,
-                    dataLabels: {
-                        enabled: true,
-                        format: '{point.y:.1f}%'
-                    }
-                }
-            },
-
             tooltip: {
                 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
                 pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
             },
-
             series: [
                 {
                     name: "OEE",
@@ -346,90 +352,86 @@
 
         //Create chart plan-oee
         Highcharts.chart('plan-oee', {
-
+            chart: {
+                type: 'line',
+                animation: Highcharts.svg, // don't animate in old IE
+                marginRight: 10,
+                events: {
+                    load: function () {
+                        // set up the updating of the chart each second
+                        var series = this.series[0];
+                        setInterval(function () {
+                            var x = (new Date()).getSeconds(), // current time
+                                y = Math.random();
+                            series.addPoint([x, y], true, true);
+                        }, 1000);
+                    }
+                }
+            },
+            time: {
+                useUTC: false
+            },
             title: {
-                text: 'Plant OEE'
+                text: '<h1><b>Plant OEE</b></h1>'
             },
-
             xAxis: {
-                tickInterval: 1,
-                type: 'logarithmic'
+                type: 'datetime',
+                tickPixelInterval:180
             },
-
             yAxis: {
-                type: 'logarithmic',
-                minorTickInterval: 0.1
+                title: {
+                    text: 'Value'
+                },
+                plotLines: [{
+                    value: 85,
+                    color: 'red',
+                    width: 1,
+                    label: {
+                        text: 'Target: 85%',
+                        align: 'center',
+                        style: {
+                            color: 'gray'
+                        }
+                    }
+                }],
             },
-
             tooltip: {
-                headerFormat: '<b>{series.name}</b><br />',
-                pointFormat: 'x = {point.x}, y = {point.y}'
+                headerFormat: '<b>{series.name}</b><br/>',
+                pointFormat: '{point.x:%Y-%m-%d %H:%M}<br/>{point.y:.2f}'
             },
-
             series: [{
-                data: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512],
-                pointStart: 1
+                name: 'Plant OEE',
+                data: (function () {
+                    // generate an array of random data
+                    var data = [],
+                        time = (new Date()).getTime(), i;
+                    for (i = -19; i <= 0; i += 1) {
+                        data.push({
+                            x: time + i * 1000,
+                            y: Math.random()
+                        });
+                    }
+                    return data;
+                }())
             }]
         });
-    </script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script>
 
         //Create chart availability
         Highcharts.chart('availability', {
             chart: {
                 type: 'gauge',
-                plotBackgroundColor: null,
-                plotBackgroundImage: null,
-                plotBorderWidth: 0,
-                plotShadow: false
             },
-
             title: {
-                text: 'Speedometer'
+                text: '<h1><b>AVAILABILITY</b></h1>'
             },
-
             pane: {
                 startAngle: -150,
                 endAngle: 150,
-                background: [{
-                    backgroundColor: {
-                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-                        stops: [
-                            [0, '#FFF'],
-                            [1, '#333']
-                        ]
-                    },
-                    borderWidth: 0,
-                    outerRadius: '109%'
-                }, {
-                    backgroundColor: {
-                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-                        stops: [
-                            [0, '#333'],
-                            [1, '#FFF']
-                        ]
-                    },
-                    borderWidth: 1,
-                    outerRadius: '107%'
-                }, {
-                    // default background
-                }, {
-                    backgroundColor: '#DDD',
-                    borderWidth: 0,
-                    outerRadius: '105%',
-                    innerRadius: '103%'
-                }]
             },
-
             // the value axis
             yAxis: {
                 min: 0,
-                max: 200,
-
+                max: 100,
                 minorTickInterval: 'auto',
                 minorTickWidth: 1,
                 minorTickLength: 10,
@@ -446,28 +448,182 @@
                     rotation: 'auto'
                 },
                 title: {
-                    text: 'km/h'
+                    text: 'Availability'
                 },
                 plotBands: [{
-                    from: 0,
-                    to: 120,
+                    from: 85,
+                    to: 100,
                     color: '#55BF3B' // green
                 }, {
-                    from: 120,
-                    to: 160,
+                    from: 85,
+                    to: 60,
                     color: '#DDDF0D' // yellow
                 }, {
-                    from: 160,
-                    to: 200,
+                    from: 0,
+                    to: 60,
                     color: '#DF5353' // red
                 }]
             },
 
             series: [{
                 name: 'Speed',
-                data: [80],
+                data: [0],//Start
                 tooltip: {
-                    valueSuffix: ' km/h'
+                    valueSuffix: 'Availability' // Tooltip text
+                }
+            }]
+
+        },
+            function (chart) {
+                if (!chart.renderer.forExport) {
+                    setInterval(function () {
+                        var point = chart.series[0].points[0],
+                            newVal,
+                            inc = Math.round((Math.random() - 0.5) * 20);
+
+                        newVal = point.y + inc;
+                        if (newVal < 0 || newVal > 200) {
+                            newVal = point.y - inc;
+                        }
+
+                        point.update(newVal);
+
+                    }, 3000);
+                }
+            });
+    </script>
+    <script type="text/javascript">
+        Highcharts.chart('performance', {
+            chart: {
+                type: 'gauge',
+            },
+            title: {
+                text: '<h1><b>Performance</b></h1>'
+            },
+            pane: {
+                startAngle: -150,
+                endAngle: 150,
+            },
+            // the value axis
+            yAxis: {
+                min: 0,
+                max: 100,
+                minorTickInterval: 'auto',
+                minorTickWidth: 1,
+                minorTickLength: 10,
+                minorTickPosition: 'inside',
+                minorTickColor: '#666',
+
+                tickPixelInterval: 30,
+                tickWidth: 2,
+                tickPosition: 'inside',
+                tickLength: 10,
+                tickColor: '#666',
+                labels: {
+                    step: 2,
+                    rotation: 'auto'
+                },
+                title: {
+                    text: 'performance'
+                },
+                plotBands: [{
+                    from: 85,
+                    to: 100,
+                    color: '#55BF3B' // green
+                }, {
+                    from: 85,
+                    to: 60,
+                    color: '#DDDF0D' // yellow
+                }, {
+                    from: 0,
+                    to: 60,
+                    color: '#DF5353' // red
+                }]
+            },
+
+            series: [{
+                name: 'Speed',
+                data: [0],//Start
+                tooltip: {
+                    valueSuffix: 'Performance' // Tooltip text
+                }
+            }]
+
+        },
+            function (chart) {
+                if (!chart.renderer.forExport) {
+                    setInterval(function () {
+                        var point = chart.series[0].points[0],
+                            newVal,
+                            inc = Math.round((Math.random() - 0.5) * 20);
+
+                        newVal = point.y + inc;
+                        if (newVal < 0 || newVal > 200) {
+                            newVal = point.y - inc;
+                        }
+
+                        point.update(newVal);
+
+                    }, 3000);
+                }
+            });
+
+    </script>
+    <script type="text/javascript">
+        Highcharts.chart('quality', {
+            chart: {
+                type: 'gauge',
+            },
+            title: {
+                text: '<h1><b>quality</b></h1>'
+            },
+            pane: {
+                startAngle: -150,
+                endAngle: 150,
+            },
+
+            // the value axis
+            yAxis: {
+                min: 0,
+                max: 100,
+                minorTickInterval: 'auto',
+                minorTickWidth: 1,
+                minorTickLength: 10,
+                minorTickPosition: 'inside',
+                minorTickColor: '#666',
+
+                tickPixelInterval: 30,
+                tickWidth: 2,
+                tickPosition: 'inside',
+                tickLength: 10,
+                tickColor: '#666',
+                labels: {
+                    step: 2,
+                    rotation: 'auto'
+                },
+                title: {
+                    text: 'Quality'
+                },
+                plotBands: [{
+                    from: 85,
+                    to: 100,
+                    color: '#55BF3B' // green
+                }, {
+                    from: 85,
+                    to: 60,
+                    color: '#DDDF0D' // yellow
+                }, {
+                    from: 0,
+                    to: 60,
+                    color: '#DF5353' // red
+                }]
+            },
+
+            series: [{
+                name: 'Speed',
+                data: [0],//Start
+                tooltip: {
+                    valueSuffix: 'Quality' // Tooltip text
                 }
             }]
 

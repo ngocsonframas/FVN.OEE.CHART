@@ -1,0 +1,2626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OEEModelStoreContainer" CdmEntityContainer="OEEEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="OEEModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="OEEModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="OEEModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="OEEModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="OEEModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForgotPassRequests">
+      <EntityTypeMapping TypeName="OEEModel.ForgotPassRequest">
+        <MappingFragment StoreEntitySet="ForgotPassRequests">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Uid" ColumnName="Uid" />
+          <ScalarProperty Name="RequestDateTime" ColumnName="RequestDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="OEEModel.Item">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="Pkey" ColumnName="Pkey" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MealSlips">
+      <EntityTypeMapping TypeName="OEEModel.MealSlip">
+        <MappingFragment StoreEntitySet="MealSlip">
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MealSlipCodes">
+      <EntityTypeMapping TypeName="OEEModel.MealSlipCode">
+        <MappingFragment StoreEntitySet="MealSlipCode">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OEEDatas">
+      <EntityTypeMapping TypeName="OEEModel.OEEData">
+        <MappingFragment StoreEntitySet="OEEData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+          <ScalarProperty Name="F011" ColumnName="F011" />
+          <ScalarProperty Name="F012" ColumnName="F012" />
+          <ScalarProperty Name="F013" ColumnName="F013" />
+          <ScalarProperty Name="F014" ColumnName="F014" />
+          <ScalarProperty Name="F015" ColumnName="F015" />
+          <ScalarProperty Name="F016" ColumnName="F016" />
+          <ScalarProperty Name="F017" ColumnName="F017" />
+          <ScalarProperty Name="F018" ColumnName="F018" />
+          <ScalarProperty Name="F019" ColumnName="F019" />
+          <ScalarProperty Name="F020" ColumnName="F020" />
+          <ScalarProperty Name="F021" ColumnName="F021" />
+          <ScalarProperty Name="F022" ColumnName="F022" />
+          <ScalarProperty Name="F023" ColumnName="F023" />
+          <ScalarProperty Name="F024" ColumnName="F024" />
+          <ScalarProperty Name="F025" ColumnName="F025" />
+          <ScalarProperty Name="F026" ColumnName="F026" />
+          <ScalarProperty Name="F027" ColumnName="F027" />
+          <ScalarProperty Name="F028" ColumnName="F028" />
+          <ScalarProperty Name="F029" ColumnName="F029" />
+          <ScalarProperty Name="F030" ColumnName="F030" />
+          <ScalarProperty Name="F031" ColumnName="F031" />
+          <ScalarProperty Name="F032" ColumnName="F032" />
+          <ScalarProperty Name="F033" ColumnName="F033" />
+          <ScalarProperty Name="F034" ColumnName="F034" />
+          <ScalarProperty Name="F035" ColumnName="F035" />
+          <ScalarProperty Name="F036" ColumnName="F036" />
+          <ScalarProperty Name="F037" ColumnName="F037" />
+          <ScalarProperty Name="F038" ColumnName="F038" />
+          <ScalarProperty Name="F039" ColumnName="F039" />
+          <ScalarProperty Name="F040" ColumnName="F040" />
+          <ScalarProperty Name="F041" ColumnName="F041" />
+          <ScalarProperty Name="F042" ColumnName="F042" />
+          <ScalarProperty Name="F043" ColumnName="F043" />
+          <ScalarProperty Name="F044" ColumnName="F044" />
+          <ScalarProperty Name="F045" ColumnName="F045" />
+          <ScalarProperty Name="F046" ColumnName="F046" />
+          <ScalarProperty Name="F047" ColumnName="F047" />
+          <ScalarProperty Name="F048" ColumnName="F048" />
+          <ScalarProperty Name="F049" ColumnName="F049" />
+          <ScalarProperty Name="F050" ColumnName="F050" />
+          <ScalarProperty Name="F051" ColumnName="F051" />
+          <ScalarProperty Name="F052" ColumnName="F052" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operators">
+      <EntityTypeMapping TypeName="OEEModel.Operator">
+        <MappingFragment StoreEntitySet="Operators">
+          <ScalarProperty Name="Pkey" ColumnName="Pkey" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRMG_EMP_01">
+      <EntityTypeMapping TypeName="OEEModel.PRMG_EMP_01">
+        <MappingFragment StoreEntitySet="PRMG_EMP_01">
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReasonStops">
+      <EntityTypeMapping TypeName="OEEModel.ReasonStop">
+        <MappingFragment StoreEntitySet="ReasonStop">
+          <ScalarProperty Name="Pkey" ColumnName="Pkey" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="OEEModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAPQDs">
+      <EntityTypeMapping TypeName="OEEModel.tblAPQD">
+        <MappingFragment StoreEntitySet="tblAPQD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="APQHID" ColumnName="APQHID" />
+          <ScalarProperty Name="Proccess" ColumnName="Proccess" />
+          <ScalarProperty Name="IDCode" ColumnName="IDCode" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Pairs" ColumnName="Pairs" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DTFromTime" ColumnName="DTFromTime" />
+          <ScalarProperty Name="DTToTime" ColumnName="DTToTime" />
+          <ScalarProperty Name="EntryTime" ColumnName="EntryTime" />
+          <ScalarProperty Name="Hour" ColumnName="Hour" />
+          <ScalarProperty Name="Piece" ColumnName="Piece" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAPQHs">
+      <EntityTypeMapping TypeName="OEEModel.tblAPQH">
+        <MappingFragment StoreEntitySet="tblAPQH">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEDate" ColumnName="OEEDate" />
+          <ScalarProperty Name="Machine" ColumnName="Machine" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAreaMachines">
+      <EntityTypeMapping TypeName="OEEModel.tblAreaMachine">
+        <MappingFragment StoreEntitySet="tblAreaMachine">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategories">
+      <EntityTypeMapping TypeName="OEEModel.tblCategory">
+        <MappingFragment StoreEntitySet="tblCategory">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblComps">
+      <EntityTypeMapping TypeName="OEEModel.tblComp">
+        <MappingFragment StoreEntitySet="tblComp">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblConsumptions">
+      <EntityTypeMapping TypeName="OEEModel.tblConsumption">
+        <MappingFragment StoreEntitySet="tblConsumption">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCustomers">
+      <EntityTypeMapping TypeName="OEEModel.tblCustomer">
+        <MappingFragment StoreEntitySet="tblCustomers">
+          <ScalarProperty Name="CustCode" ColumnName="CustCode" />
+          <ScalarProperty Name="CustName" ColumnName="CustName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDepts">
+      <EntityTypeMapping TypeName="OEEModel.tblDept">
+        <MappingFragment StoreEntitySet="tblDept">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDTGroups">
+      <EntityTypeMapping TypeName="OEEModel.tblDTGroup">
+        <MappingFragment StoreEntitySet="tblDTGroup">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployees">
+      <EntityTypeMapping TypeName="OEEModel.tblEmployee">
+        <MappingFragment StoreEntitySet="tblEmployee">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblIndexes">
+      <EntityTypeMapping TypeName="OEEModel.tblIndex">
+        <MappingFragment StoreEntitySet="tblIndex">
+          <ScalarProperty Name="tblName" ColumnName="tblName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInputMCActionHs">
+      <EntityTypeMapping TypeName="OEEModel.tblInputMCActionH">
+        <MappingFragment StoreEntitySet="tblInputMCActionH">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MC" ColumnName="MC" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="UserInput" ColumnName="UserInput" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="DTID" ColumnName="DTID" />
+          <ScalarProperty Name="LNAME" ColumnName="LNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInputMCActionIs">
+      <EntityTypeMapping TypeName="OEEModel.tblInputMCActionI">
+        <MappingFragment StoreEntitySet="tblInputMCActionI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDinMCActionH" ColumnName="IDinMCActionH" />
+          <ScalarProperty Name="IDListActionMC" ColumnName="IDListActionMC" />
+          <ScalarProperty Name="Checked" ColumnName="Checked" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInputPMMHs">
+      <EntityTypeMapping TypeName="OEEModel.tblInputPMMH">
+        <MappingFragment StoreEntitySet="tblInputPMMH">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="UserInput" ColumnName="UserInput" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="MoldSet" ColumnName="MoldSet" />
+          <ScalarProperty Name="CompNo" ColumnName="CompNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInputPMMIs">
+      <EntityTypeMapping TypeName="OEEModel.tblInputPMMI">
+        <MappingFragment StoreEntitySet="tblInputPMMI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDinPMMH" ColumnName="IDinPMMH" />
+          <ScalarProperty Name="IDListPM" ColumnName="IDListPM" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Checked" ColumnName="Checked" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="IDTime" ColumnName="IDTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItems">
+      <EntityTypeMapping TypeName="OEEModel.tblItem">
+        <MappingFragment StoreEntitySet="tblItem">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+          <ScalarProperty Name="F011" ColumnName="F011" />
+          <ScalarProperty Name="F012" ColumnName="F012" />
+          <ScalarProperty Name="F013" ColumnName="F013" />
+          <ScalarProperty Name="F014" ColumnName="F014" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItemColors">
+      <EntityTypeMapping TypeName="OEEModel.tblItemColor">
+        <MappingFragment StoreEntitySet="tblItemColor">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItemComps">
+      <EntityTypeMapping TypeName="OEEModel.tblItemComp">
+        <MappingFragment StoreEntitySet="tblItemComp">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+          <ScalarProperty Name="F011" ColumnName="F011" />
+          <ScalarProperty Name="F012" ColumnName="F012" />
+          <ScalarProperty Name="F013" ColumnName="F013" />
+          <ScalarProperty Name="F014" ColumnName="F014" />
+          <ScalarProperty Name="F015" ColumnName="F015" />
+          <ScalarProperty Name="F016" ColumnName="F016" />
+          <ScalarProperty Name="F017" ColumnName="F017" />
+          <ScalarProperty Name="F018" ColumnName="F018" />
+          <ScalarProperty Name="F019" ColumnName="F019" />
+          <ScalarProperty Name="F020" ColumnName="F020" />
+          <ScalarProperty Name="F021" ColumnName="F021" />
+          <ScalarProperty Name="F022" ColumnName="F022" />
+          <ScalarProperty Name="F023" ColumnName="F023" />
+          <ScalarProperty Name="F024" ColumnName="F024" />
+          <ScalarProperty Name="F025" ColumnName="F025" />
+          <ScalarProperty Name="F026" ColumnName="F026" />
+          <ScalarProperty Name="F027" ColumnName="F027" />
+          <ScalarProperty Name="F028" ColumnName="F028" />
+          <ScalarProperty Name="F029" ColumnName="F029" />
+          <ScalarProperty Name="F030" ColumnName="F030" />
+          <ScalarProperty Name="F031" ColumnName="F031" />
+          <ScalarProperty Name="F032" ColumnName="F032" />
+          <ScalarProperty Name="F033" ColumnName="F033" />
+          <ScalarProperty Name="F034" ColumnName="F034" />
+          <ScalarProperty Name="F035" ColumnName="F035" />
+          <ScalarProperty Name="F036" ColumnName="F036" />
+          <ScalarProperty Name="F037" ColumnName="F037" />
+          <ScalarProperty Name="F038" ColumnName="F038" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItemCompBonus">
+      <EntityTypeMapping TypeName="OEEModel.tblItemCompBonu">
+        <MappingFragment StoreEntitySet="tblItemCompBonus">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItemCompPrices">
+      <EntityTypeMapping TypeName="OEEModel.tblItemCompPrice">
+        <MappingFragment StoreEntitySet="tblItemCompPrice">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItemSizes">
+      <EntityTypeMapping TypeName="OEEModel.tblItemSize">
+        <MappingFragment StoreEntitySet="tblItemSize">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblJobDescs">
+      <EntityTypeMapping TypeName="OEEModel.tblJobDesc">
+        <MappingFragment StoreEntitySet="tblJobDesc">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLotNumbers">
+      <EntityTypeMapping TypeName="OEEModel.tblLotNumber">
+        <MappingFragment StoreEntitySet="tblLotNumber">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Machine" ColumnName="Machine" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="Shift" ColumnName="Shift" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMachines">
+      <EntityTypeMapping TypeName="OEEModel.tblMachine">
+        <MappingFragment StoreEntitySet="tblMachine">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMachineLayouts">
+      <EntityTypeMapping TypeName="OEEModel.tblMachineLayout">
+        <MappingFragment StoreEntitySet="tblMachineLayout">
+          <ScalarProperty Name="LayoutNo" ColumnName="LayoutNo" />
+          <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="OrderNoL" ColumnName="OrderNoL" />
+          <ScalarProperty Name="LayoutNoL" ColumnName="LayoutNoL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMachineLayoutbk300515">
+      <EntityTypeMapping TypeName="OEEModel.tblMachineLayoutbk300515">
+        <MappingFragment StoreEntitySet="tblMachineLayoutbk300515">
+          <ScalarProperty Name="LayoutNo" ColumnName="LayoutNo" />
+          <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="OrderNoL" ColumnName="OrderNoL" />
+          <ScalarProperty Name="LayoutNoL" ColumnName="LayoutNoL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMachinePlans">
+      <EntityTypeMapping TypeName="OEEModel.tblMachinePlan">
+        <MappingFragment StoreEntitySet="tblMachinePlan">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="MachinePlan" ColumnName="MachinePlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMachineStatus">
+      <EntityTypeMapping TypeName="OEEModel.tblMachineStatu">
+        <MappingFragment StoreEntitySet="tblMachineStatus">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblManagements">
+      <EntityTypeMapping TypeName="OEEModel.tblManagement">
+        <MappingFragment StoreEntitySet="tblManagement">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblManagers">
+      <EntityTypeMapping TypeName="OEEModel.tblManager">
+        <MappingFragment StoreEntitySet="tblManager">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMaterials">
+      <EntityTypeMapping TypeName="OEEModel.tblMaterial">
+        <MappingFragment StoreEntitySet="tblMaterial">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_DF">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_DF">
+        <MappingFragment StoreEntitySet="tblOEE_DF">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="Cval" ColumnName="Cval" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Percen" ColumnName="Percen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_DT">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_DT">
+        <MappingFragment StoreEntitySet="tblOEE_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="Cval" ColumnName="Cval" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Percen" ColumnName="Percen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_1">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_1">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_1">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_1_BK_2014_062015">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_1_BK_2014_062015">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_1_BK_2014_062015">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_1_BK_2016">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_1_BK_2016">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_1_BK_2016">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_2">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_2">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_2">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_2_BK_2014_062015">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_2_BK_2014_062015">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_2_BK_2014_062015">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_2_BK_2016">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_2_BK_2016">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_2_BK_2016">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_3">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_3">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_3">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_3_BK_2014_062015">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_3_BK_2014_062015">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_3_BK_2014_062015">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_3_BK_2016">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_3_BK_2016">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_3_BK_2016">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_4">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_4">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_4">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_4_BK_2014_062015">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_4_BK_2014_062015">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_4_BK_2014_062015">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_4_BK_2016">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_4_BK_2016">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_4_BK_2016">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_5">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_5">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_5">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_5_BK_2014_062015">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_5_BK_2014_062015">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_5_BK_2014_062015">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_5_BK_2016">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_5_BK_2016">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_5_BK_2016">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_6">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_6">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_6">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_6_BK_2014_062015">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_6_BK_2014_062015">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_6_BK_2014_062015">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_6_BK_2016">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_6_BK_2016">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_6_BK_2016">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_7">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_7">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_7">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_7_BK_2014_062015">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_7_BK_2014_062015">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_7_BK_2014_062015">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_7_BK_2016">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_7_BK_2016">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_7_BK_2016">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_PLC_Lost">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_PLC_Lost">
+        <MappingFragment StoreEntitySet="tblOEE_PLC_Lost">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_TemplateA">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_TemplateA">
+        <MappingFragment StoreEntitySet="tblOEE_TemplateA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="Percen" ColumnName="Percen" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="CategoryNo" ColumnName="CategoryNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEE_TemplateQ">
+      <EntityTypeMapping TypeName="OEEModel.tblOEE_TemplateQ">
+        <MappingFragment StoreEntitySet="tblOEE_TemplateQ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="Percen" ColumnName="Percen" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="CategoryNo" ColumnName="CategoryNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEColorRanges">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEColorRange">
+        <MappingFragment StoreEntitySet="tblOEEColorRange">
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="RRate" ColumnName="RRate" />
+          <ScalarProperty Name="RName" ColumnName="RName" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEColumnLocations">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEColumnLocation">
+        <MappingFragment StoreEntitySet="tblOEEColumnLocation">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDetails">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDetail">
+        <MappingFragment StoreEntitySet="tblOEEDetail">
+          <ScalarProperty Name="OEEType" ColumnName="OEEType" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="A101" ColumnName="A101" />
+          <ScalarProperty Name="A102" ColumnName="A102" />
+          <ScalarProperty Name="A103" ColumnName="A103" />
+          <ScalarProperty Name="A104" ColumnName="A104" />
+          <ScalarProperty Name="A105" ColumnName="A105" />
+          <ScalarProperty Name="A106" ColumnName="A106" />
+          <ScalarProperty Name="A107" ColumnName="A107" />
+          <ScalarProperty Name="A108" ColumnName="A108" />
+          <ScalarProperty Name="A109" ColumnName="A109" />
+          <ScalarProperty Name="A110" ColumnName="A110" />
+          <ScalarProperty Name="A111" ColumnName="A111" />
+          <ScalarProperty Name="A121" ColumnName="A121" />
+          <ScalarProperty Name="A122" ColumnName="A122" />
+          <ScalarProperty Name="A123" ColumnName="A123" />
+          <ScalarProperty Name="A124" ColumnName="A124" />
+          <ScalarProperty Name="A201" ColumnName="A201" />
+          <ScalarProperty Name="A202" ColumnName="A202" />
+          <ScalarProperty Name="A301" ColumnName="A301" />
+          <ScalarProperty Name="A401" ColumnName="A401" />
+          <ScalarProperty Name="A901" ColumnName="A901" />
+          <ScalarProperty Name="L101" ColumnName="L101" />
+          <ScalarProperty Name="L102" ColumnName="L102" />
+          <ScalarProperty Name="L103" ColumnName="L103" />
+          <ScalarProperty Name="L104" ColumnName="L104" />
+          <ScalarProperty Name="L105" ColumnName="L105" />
+          <ScalarProperty Name="L201" ColumnName="L201" />
+          <ScalarProperty Name="L202" ColumnName="L202" />
+          <ScalarProperty Name="L301" ColumnName="L301" />
+          <ScalarProperty Name="P101" ColumnName="P101" />
+          <ScalarProperty Name="P121" ColumnName="P121" />
+          <ScalarProperty Name="P122" ColumnName="P122" />
+          <ScalarProperty Name="P123" ColumnName="P123" />
+          <ScalarProperty Name="P124" ColumnName="P124" />
+          <ScalarProperty Name="P125" ColumnName="P125" />
+          <ScalarProperty Name="P126" ColumnName="P126" />
+          <ScalarProperty Name="P201" ColumnName="P201" />
+          <ScalarProperty Name="P202" ColumnName="P202" />
+          <ScalarProperty Name="P301" ColumnName="P301" />
+          <ScalarProperty Name="P401" ColumnName="P401" />
+          <ScalarProperty Name="P901" ColumnName="P901" />
+          <ScalarProperty Name="Q101" ColumnName="Q101" />
+          <ScalarProperty Name="Q102" ColumnName="Q102" />
+          <ScalarProperty Name="Q103" ColumnName="Q103" />
+          <ScalarProperty Name="Q104" ColumnName="Q104" />
+          <ScalarProperty Name="Q105" ColumnName="Q105" />
+          <ScalarProperty Name="Q106" ColumnName="Q106" />
+          <ScalarProperty Name="Q107" ColumnName="Q107" />
+          <ScalarProperty Name="Q108" ColumnName="Q108" />
+          <ScalarProperty Name="Q109" ColumnName="Q109" />
+          <ScalarProperty Name="Q110" ColumnName="Q110" />
+          <ScalarProperty Name="Q111" ColumnName="Q111" />
+          <ScalarProperty Name="Q112" ColumnName="Q112" />
+          <ScalarProperty Name="Q113" ColumnName="Q113" />
+          <ScalarProperty Name="Q114" ColumnName="Q114" />
+          <ScalarProperty Name="Q115" ColumnName="Q115" />
+          <ScalarProperty Name="Q116" ColumnName="Q116" />
+          <ScalarProperty Name="Q117" ColumnName="Q117" />
+          <ScalarProperty Name="Q118" ColumnName="Q118" />
+          <ScalarProperty Name="Q119" ColumnName="Q119" />
+          <ScalarProperty Name="Q201" ColumnName="Q201" />
+          <ScalarProperty Name="Q202" ColumnName="Q202" />
+          <ScalarProperty Name="Q301" ColumnName="Q301" />
+          <ScalarProperty Name="Q401" ColumnName="Q401" />
+          <ScalarProperty Name="Q901" ColumnName="Q901" />
+          <ScalarProperty Name="OEEE" ColumnName="OEEE" />
+          <ScalarProperty Name="COQ" ColumnName="COQ" />
+          <ScalarProperty Name="Q120" ColumnName="Q120" />
+          <ScalarProperty Name="Q121" ColumnName="Q121" />
+          <ScalarProperty Name="A125" ColumnName="A125" />
+          <ScalarProperty Name="A126" ColumnName="A126" />
+          <ScalarProperty Name="A127" ColumnName="A127" />
+          <ScalarProperty Name="Q122" ColumnName="Q122" />
+          <ScalarProperty Name="A128" ColumnName="A128" />
+          <ScalarProperty Name="A129" ColumnName="A129" />
+          <ScalarProperty Name="A130" ColumnName="A130" />
+          <ScalarProperty Name="A131" ColumnName="A131" />
+          <ScalarProperty Name="A132" ColumnName="A132" />
+          <ScalarProperty Name="Q123" ColumnName="Q123" />
+          <ScalarProperty Name="A133" ColumnName="A133" />
+          <ScalarProperty Name="A134" ColumnName="A134" />
+          <ScalarProperty Name="A135" ColumnName="A135" />
+          <ScalarProperty Name="A136" ColumnName="A136" />
+          <ScalarProperty Name="A137" ColumnName="A137" />
+          <ScalarProperty Name="A138" ColumnName="A138" />
+          <ScalarProperty Name="A139" ColumnName="A139" />
+          <ScalarProperty Name="A140" ColumnName="A140" />
+          <ScalarProperty Name="A141" ColumnName="A141" />
+          <ScalarProperty Name="A142" ColumnName="A142" />
+          <ScalarProperty Name="A143" ColumnName="A143" />
+          <ScalarProperty Name="Q124" ColumnName="Q124" />
+          <ScalarProperty Name="A144" ColumnName="A144" />
+          <ScalarProperty Name="A145" ColumnName="A145" />
+          <ScalarProperty Name="A146" ColumnName="A146" />
+          <ScalarProperty Name="A147" ColumnName="A147" />
+          <ScalarProperty Name="A148" ColumnName="A148" />
+          <ScalarProperty Name="A149" ColumnName="A149" />
+          <ScalarProperty Name="A150" ColumnName="A150" />
+          <ScalarProperty Name="A151" ColumnName="A151" />
+          <ScalarProperty Name="A152" ColumnName="A152" />
+          <ScalarProperty Name="A153" ColumnName="A153" />
+          <ScalarProperty Name="A154" ColumnName="A154" />
+          <ScalarProperty Name="A155" ColumnName="A155" />
+          <ScalarProperty Name="Q125" ColumnName="Q125" />
+          <ScalarProperty Name="A156" ColumnName="A156" />
+          <ScalarProperty Name="A157" ColumnName="A157" />
+          <ScalarProperty Name="A158" ColumnName="A158" />
+          <ScalarProperty Name="A159" ColumnName="A159" />
+          <ScalarProperty Name="A160" ColumnName="A160" />
+          <ScalarProperty Name="A161" ColumnName="A161" />
+          <ScalarProperty Name="A163" ColumnName="A163" />
+          <ScalarProperty Name="A164" ColumnName="A164" />
+          <ScalarProperty Name="A166" ColumnName="A166" />
+          <ScalarProperty Name="L106" ColumnName="L106" />
+          <ScalarProperty Name="A167" ColumnName="A167" />
+          <ScalarProperty Name="A168" ColumnName="A168" />
+          <ScalarProperty Name="A169" ColumnName="A169" />
+          <ScalarProperty Name="A170" ColumnName="A170" />
+          <ScalarProperty Name="A171" ColumnName="A171" />
+          <ScalarProperty Name="Q126" ColumnName="Q126" />
+          <ScalarProperty Name="Q127" ColumnName="Q127" />
+          <ScalarProperty Name="Q128" ColumnName="Q128" />
+          <ScalarProperty Name="Q129" ColumnName="Q129" />
+          <ScalarProperty Name="Q130" ColumnName="Q130" />
+          <ScalarProperty Name="L108" ColumnName="L108" />
+          <ScalarProperty Name="L109" ColumnName="L109" />
+          <ScalarProperty Name="L110" ColumnName="L110" />
+          <ScalarProperty Name="L112" ColumnName="L112" />
+          <ScalarProperty Name="L113" ColumnName="L113" />
+          <ScalarProperty Name="L111" ColumnName="L111" />
+          <ScalarProperty Name="Q131" ColumnName="Q131" />
+          <ScalarProperty Name="L114" ColumnName="L114" />
+          <ScalarProperty Name="L115" ColumnName="L115" />
+          <ScalarProperty Name="L116" ColumnName="L116" />
+          <ScalarProperty Name="Q132" ColumnName="Q132" />
+          <ScalarProperty Name="Q133" ColumnName="Q133" />
+          <ScalarProperty Name="A172" ColumnName="A172" />
+          <ScalarProperty Name="A173" ColumnName="A173" />
+          <ScalarProperty Name="A174" ColumnName="A174" />
+          <ScalarProperty Name="A175" ColumnName="A175" />
+          <ScalarProperty Name="A176" ColumnName="A176" />
+          <ScalarProperty Name="A177" ColumnName="A177" />
+          <ScalarProperty Name="A178" ColumnName="A178" />
+          <ScalarProperty Name="A179" ColumnName="A179" />
+          <ScalarProperty Name="A180" ColumnName="A180" />
+          <ScalarProperty Name="Q134" ColumnName="Q134" />
+          <ScalarProperty Name="Q135" ColumnName="Q135" />
+          <ScalarProperty Name="Q136" ColumnName="Q136" />
+          <ScalarProperty Name="Q137" ColumnName="Q137" />
+          <ScalarProperty Name="Q138" ColumnName="Q138" />
+          <ScalarProperty Name="Q139" ColumnName="Q139" />
+          <ScalarProperty Name="Q140" ColumnName="Q140" />
+          <ScalarProperty Name="Q141" ColumnName="Q141" />
+          <ScalarProperty Name="Q142" ColumnName="Q142" />
+          <ScalarProperty Name="Q143" ColumnName="Q143" />
+          <ScalarProperty Name="Q144" ColumnName="Q144" />
+          <ScalarProperty Name="Q145" ColumnName="Q145" />
+          <ScalarProperty Name="Q146" ColumnName="Q146" />
+          <ScalarProperty Name="Q147" ColumnName="Q147" />
+          <ScalarProperty Name="Q148" ColumnName="Q148" />
+          <ScalarProperty Name="Q149" ColumnName="Q149" />
+          <ScalarProperty Name="Q150" ColumnName="Q150" />
+          <ScalarProperty Name="Q151" ColumnName="Q151" />
+          <ScalarProperty Name="Q152" ColumnName="Q152" />
+          <ScalarProperty Name="Q153" ColumnName="Q153" />
+          <ScalarProperty Name="Q154" ColumnName="Q154" />
+          <ScalarProperty Name="Q155" ColumnName="Q155" />
+          <ScalarProperty Name="L117" ColumnName="L117" />
+          <ScalarProperty Name="L118" ColumnName="L118" />
+          <ScalarProperty Name="L119" ColumnName="L119" />
+          <ScalarProperty Name="L120" ColumnName="L120" />
+          <ScalarProperty Name="L121" ColumnName="L121" />
+          <ScalarProperty Name="Q156" ColumnName="Q156" />
+          <ScalarProperty Name="Q157" ColumnName="Q157" />
+          <ScalarProperty Name="Q158" ColumnName="Q158" />
+          <ScalarProperty Name="L122" ColumnName="L122" />
+          <ScalarProperty Name="L123" ColumnName="L123" />
+          <ScalarProperty Name="A010" ColumnName="A010" />
+          <ScalarProperty Name="A011" ColumnName="A011" />
+          <ScalarProperty Name="A012" ColumnName="A012" />
+          <ScalarProperty Name="A013" ColumnName="A013" />
+          <ScalarProperty Name="A014" ColumnName="A014" />
+          <ScalarProperty Name="A015" ColumnName="A015" />
+          <ScalarProperty Name="Q159" ColumnName="Q159" />
+          <ScalarProperty Name="Q160" ColumnName="Q160" />
+          <ScalarProperty Name="L125" ColumnName="L125" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDetail_Tablet">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDetail_Tablet">
+        <MappingFragment StoreEntitySet="tblOEEDetail_Tablet">
+          <ScalarProperty Name="OEEType" ColumnName="OEEType" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="A101" ColumnName="A101" />
+          <ScalarProperty Name="A102" ColumnName="A102" />
+          <ScalarProperty Name="A103" ColumnName="A103" />
+          <ScalarProperty Name="A104" ColumnName="A104" />
+          <ScalarProperty Name="A105" ColumnName="A105" />
+          <ScalarProperty Name="A106" ColumnName="A106" />
+          <ScalarProperty Name="A107" ColumnName="A107" />
+          <ScalarProperty Name="A108" ColumnName="A108" />
+          <ScalarProperty Name="A109" ColumnName="A109" />
+          <ScalarProperty Name="A110" ColumnName="A110" />
+          <ScalarProperty Name="A111" ColumnName="A111" />
+          <ScalarProperty Name="A121" ColumnName="A121" />
+          <ScalarProperty Name="A122" ColumnName="A122" />
+          <ScalarProperty Name="A123" ColumnName="A123" />
+          <ScalarProperty Name="A124" ColumnName="A124" />
+          <ScalarProperty Name="A201" ColumnName="A201" />
+          <ScalarProperty Name="A202" ColumnName="A202" />
+          <ScalarProperty Name="A301" ColumnName="A301" />
+          <ScalarProperty Name="A401" ColumnName="A401" />
+          <ScalarProperty Name="A901" ColumnName="A901" />
+          <ScalarProperty Name="L101" ColumnName="L101" />
+          <ScalarProperty Name="L102" ColumnName="L102" />
+          <ScalarProperty Name="L103" ColumnName="L103" />
+          <ScalarProperty Name="L104" ColumnName="L104" />
+          <ScalarProperty Name="L105" ColumnName="L105" />
+          <ScalarProperty Name="L201" ColumnName="L201" />
+          <ScalarProperty Name="L202" ColumnName="L202" />
+          <ScalarProperty Name="L301" ColumnName="L301" />
+          <ScalarProperty Name="P101" ColumnName="P101" />
+          <ScalarProperty Name="P121" ColumnName="P121" />
+          <ScalarProperty Name="P122" ColumnName="P122" />
+          <ScalarProperty Name="P123" ColumnName="P123" />
+          <ScalarProperty Name="P124" ColumnName="P124" />
+          <ScalarProperty Name="P125" ColumnName="P125" />
+          <ScalarProperty Name="P126" ColumnName="P126" />
+          <ScalarProperty Name="P201" ColumnName="P201" />
+          <ScalarProperty Name="P202" ColumnName="P202" />
+          <ScalarProperty Name="P301" ColumnName="P301" />
+          <ScalarProperty Name="P401" ColumnName="P401" />
+          <ScalarProperty Name="P901" ColumnName="P901" />
+          <ScalarProperty Name="Q101" ColumnName="Q101" />
+          <ScalarProperty Name="Q102" ColumnName="Q102" />
+          <ScalarProperty Name="Q103" ColumnName="Q103" />
+          <ScalarProperty Name="Q104" ColumnName="Q104" />
+          <ScalarProperty Name="Q105" ColumnName="Q105" />
+          <ScalarProperty Name="Q106" ColumnName="Q106" />
+          <ScalarProperty Name="Q107" ColumnName="Q107" />
+          <ScalarProperty Name="Q108" ColumnName="Q108" />
+          <ScalarProperty Name="Q109" ColumnName="Q109" />
+          <ScalarProperty Name="Q110" ColumnName="Q110" />
+          <ScalarProperty Name="Q111" ColumnName="Q111" />
+          <ScalarProperty Name="Q112" ColumnName="Q112" />
+          <ScalarProperty Name="Q113" ColumnName="Q113" />
+          <ScalarProperty Name="Q114" ColumnName="Q114" />
+          <ScalarProperty Name="Q115" ColumnName="Q115" />
+          <ScalarProperty Name="Q116" ColumnName="Q116" />
+          <ScalarProperty Name="Q117" ColumnName="Q117" />
+          <ScalarProperty Name="Q118" ColumnName="Q118" />
+          <ScalarProperty Name="Q119" ColumnName="Q119" />
+          <ScalarProperty Name="Q201" ColumnName="Q201" />
+          <ScalarProperty Name="Q202" ColumnName="Q202" />
+          <ScalarProperty Name="Q301" ColumnName="Q301" />
+          <ScalarProperty Name="Q401" ColumnName="Q401" />
+          <ScalarProperty Name="Q901" ColumnName="Q901" />
+          <ScalarProperty Name="OEEE" ColumnName="OEEE" />
+          <ScalarProperty Name="COQ" ColumnName="COQ" />
+          <ScalarProperty Name="Q120" ColumnName="Q120" />
+          <ScalarProperty Name="Q121" ColumnName="Q121" />
+          <ScalarProperty Name="A125" ColumnName="A125" />
+          <ScalarProperty Name="A126" ColumnName="A126" />
+          <ScalarProperty Name="A127" ColumnName="A127" />
+          <ScalarProperty Name="Q122" ColumnName="Q122" />
+          <ScalarProperty Name="A128" ColumnName="A128" />
+          <ScalarProperty Name="A129" ColumnName="A129" />
+          <ScalarProperty Name="A130" ColumnName="A130" />
+          <ScalarProperty Name="A131" ColumnName="A131" />
+          <ScalarProperty Name="A132" ColumnName="A132" />
+          <ScalarProperty Name="Q123" ColumnName="Q123" />
+          <ScalarProperty Name="A133" ColumnName="A133" />
+          <ScalarProperty Name="A134" ColumnName="A134" />
+          <ScalarProperty Name="A135" ColumnName="A135" />
+          <ScalarProperty Name="A136" ColumnName="A136" />
+          <ScalarProperty Name="A137" ColumnName="A137" />
+          <ScalarProperty Name="A138" ColumnName="A138" />
+          <ScalarProperty Name="A139" ColumnName="A139" />
+          <ScalarProperty Name="A140" ColumnName="A140" />
+          <ScalarProperty Name="A141" ColumnName="A141" />
+          <ScalarProperty Name="A142" ColumnName="A142" />
+          <ScalarProperty Name="A143" ColumnName="A143" />
+          <ScalarProperty Name="Q124" ColumnName="Q124" />
+          <ScalarProperty Name="A144" ColumnName="A144" />
+          <ScalarProperty Name="A145" ColumnName="A145" />
+          <ScalarProperty Name="A146" ColumnName="A146" />
+          <ScalarProperty Name="A147" ColumnName="A147" />
+          <ScalarProperty Name="A148" ColumnName="A148" />
+          <ScalarProperty Name="A149" ColumnName="A149" />
+          <ScalarProperty Name="A150" ColumnName="A150" />
+          <ScalarProperty Name="A151" ColumnName="A151" />
+          <ScalarProperty Name="A152" ColumnName="A152" />
+          <ScalarProperty Name="A153" ColumnName="A153" />
+          <ScalarProperty Name="A154" ColumnName="A154" />
+          <ScalarProperty Name="A155" ColumnName="A155" />
+          <ScalarProperty Name="Q125" ColumnName="Q125" />
+          <ScalarProperty Name="A156" ColumnName="A156" />
+          <ScalarProperty Name="A157" ColumnName="A157" />
+          <ScalarProperty Name="A158" ColumnName="A158" />
+          <ScalarProperty Name="A159" ColumnName="A159" />
+          <ScalarProperty Name="A160" ColumnName="A160" />
+          <ScalarProperty Name="A161" ColumnName="A161" />
+          <ScalarProperty Name="A163" ColumnName="A163" />
+          <ScalarProperty Name="A164" ColumnName="A164" />
+          <ScalarProperty Name="A166" ColumnName="A166" />
+          <ScalarProperty Name="L106" ColumnName="L106" />
+          <ScalarProperty Name="A167" ColumnName="A167" />
+          <ScalarProperty Name="A168" ColumnName="A168" />
+          <ScalarProperty Name="A169" ColumnName="A169" />
+          <ScalarProperty Name="A170" ColumnName="A170" />
+          <ScalarProperty Name="A171" ColumnName="A171" />
+          <ScalarProperty Name="Q126" ColumnName="Q126" />
+          <ScalarProperty Name="Q127" ColumnName="Q127" />
+          <ScalarProperty Name="Q128" ColumnName="Q128" />
+          <ScalarProperty Name="Q129" ColumnName="Q129" />
+          <ScalarProperty Name="Q130" ColumnName="Q130" />
+          <ScalarProperty Name="L108" ColumnName="L108" />
+          <ScalarProperty Name="L109" ColumnName="L109" />
+          <ScalarProperty Name="L110" ColumnName="L110" />
+          <ScalarProperty Name="L112" ColumnName="L112" />
+          <ScalarProperty Name="L113" ColumnName="L113" />
+          <ScalarProperty Name="L111" ColumnName="L111" />
+          <ScalarProperty Name="Q131" ColumnName="Q131" />
+          <ScalarProperty Name="L114" ColumnName="L114" />
+          <ScalarProperty Name="L115" ColumnName="L115" />
+          <ScalarProperty Name="L116" ColumnName="L116" />
+          <ScalarProperty Name="Q132" ColumnName="Q132" />
+          <ScalarProperty Name="Q133" ColumnName="Q133" />
+          <ScalarProperty Name="A172" ColumnName="A172" />
+          <ScalarProperty Name="A173" ColumnName="A173" />
+          <ScalarProperty Name="A174" ColumnName="A174" />
+          <ScalarProperty Name="A175" ColumnName="A175" />
+          <ScalarProperty Name="A176" ColumnName="A176" />
+          <ScalarProperty Name="A177" ColumnName="A177" />
+          <ScalarProperty Name="A178" ColumnName="A178" />
+          <ScalarProperty Name="A179" ColumnName="A179" />
+          <ScalarProperty Name="A180" ColumnName="A180" />
+          <ScalarProperty Name="Q134" ColumnName="Q134" />
+          <ScalarProperty Name="Q135" ColumnName="Q135" />
+          <ScalarProperty Name="Q136" ColumnName="Q136" />
+          <ScalarProperty Name="Q137" ColumnName="Q137" />
+          <ScalarProperty Name="Q138" ColumnName="Q138" />
+          <ScalarProperty Name="Q139" ColumnName="Q139" />
+          <ScalarProperty Name="Q140" ColumnName="Q140" />
+          <ScalarProperty Name="Q141" ColumnName="Q141" />
+          <ScalarProperty Name="Q142" ColumnName="Q142" />
+          <ScalarProperty Name="Q143" ColumnName="Q143" />
+          <ScalarProperty Name="Q144" ColumnName="Q144" />
+          <ScalarProperty Name="Q145" ColumnName="Q145" />
+          <ScalarProperty Name="Q146" ColumnName="Q146" />
+          <ScalarProperty Name="Q147" ColumnName="Q147" />
+          <ScalarProperty Name="Q148" ColumnName="Q148" />
+          <ScalarProperty Name="Q149" ColumnName="Q149" />
+          <ScalarProperty Name="Q150" ColumnName="Q150" />
+          <ScalarProperty Name="Q151" ColumnName="Q151" />
+          <ScalarProperty Name="Q152" ColumnName="Q152" />
+          <ScalarProperty Name="Q153" ColumnName="Q153" />
+          <ScalarProperty Name="Q154" ColumnName="Q154" />
+          <ScalarProperty Name="Q155" ColumnName="Q155" />
+          <ScalarProperty Name="L117" ColumnName="L117" />
+          <ScalarProperty Name="L118" ColumnName="L118" />
+          <ScalarProperty Name="L119" ColumnName="L119" />
+          <ScalarProperty Name="L120" ColumnName="L120" />
+          <ScalarProperty Name="L121" ColumnName="L121" />
+          <ScalarProperty Name="Q156" ColumnName="Q156" />
+          <ScalarProperty Name="Q157" ColumnName="Q157" />
+          <ScalarProperty Name="Q158" ColumnName="Q158" />
+          <ScalarProperty Name="L122" ColumnName="L122" />
+          <ScalarProperty Name="L123" ColumnName="L123" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDownTimes">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDownTime">
+        <MappingFragment StoreEntitySet="tblOEEDownTime">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+          <ScalarProperty Name="F011" ColumnName="F011" />
+          <ScalarProperty Name="F012" ColumnName="F012" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDownTime1">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDownTime1">
+        <MappingFragment StoreEntitySet="tblOEEDownTime1">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+          <ScalarProperty Name="F011" ColumnName="F011" />
+          <ScalarProperty Name="F012" ColumnName="F012" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDTLosts">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDTLost">
+        <MappingFragment StoreEntitySet="tblOEEDTLost">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEDate" ColumnName="OEEDate" />
+          <ScalarProperty Name="ModeID" ColumnName="ModeID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="DTLID" ColumnName="DTLID" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="CountPerformance" ColumnName="CountPerformance" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDTLost_Tablet">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDTLost_Tablet">
+        <MappingFragment StoreEntitySet="tblOEEDTLost_Tablet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEDate" ColumnName="OEEDate" />
+          <ScalarProperty Name="ModeID" ColumnName="ModeID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="DTLID" ColumnName="DTLID" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="CountPerformance" ColumnName="CountPerformance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDTProcesses">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDTProcess">
+        <MappingFragment StoreEntitySet="tblOEEDTProcess">
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="IID" ColumnName="IID" />
+          <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+          <ScalarProperty Name="MProcessID" ColumnName="MProcessID" />
+          <ScalarProperty Name="DTID" ColumnName="DTID" />
+          <ScalarProperty Name="CLNMaterial" ColumnName="CLNMaterial" />
+          <ScalarProperty Name="STReject" ColumnName="STReject" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="DTOrder" ColumnName="DTOrder" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="NPackage" ColumnName="NPackage" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DTFromTime" ColumnName="DTFromTime" />
+          <ScalarProperty Name="DTToTime" ColumnName="DTToTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDTProcess_Tablet">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDTProcess_Tablet">
+        <MappingFragment StoreEntitySet="tblOEEDTProcess_Tablet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="IID" ColumnName="IID" />
+          <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+          <ScalarProperty Name="MProcessID" ColumnName="MProcessID" />
+          <ScalarProperty Name="DTID" ColumnName="DTID" />
+          <ScalarProperty Name="CLNMaterial" ColumnName="CLNMaterial" />
+          <ScalarProperty Name="STReject" ColumnName="STReject" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="DTOrder" ColumnName="DTOrder" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="NPackage" ColumnName="NPackage" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEMasterFiles">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEMasterFile">
+        <MappingFragment StoreEntitySet="tblOEEMasterFile">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CodeName" ColumnName="CodeName" />
+          <ScalarProperty Name="CodeValue" ColumnName="CodeValue" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEMCOverSchedules">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEMCOverSchedule">
+        <MappingFragment StoreEntitySet="tblOEEMCOverSchedule">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+          <ScalarProperty Name="F011" ColumnName="F011" />
+          <ScalarProperty Name="F012" ColumnName="F012" />
+          <ScalarProperty Name="PlanNo" ColumnName="PlanNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEMoldChanges">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEMoldChange">
+        <MappingFragment StoreEntitySet="tblOEEMoldChange">
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEPackgedQualities">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEPackgedQuality">
+        <MappingFragment StoreEntitySet="tblOEEPackgedQuality">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="PackgedTem" ColumnName="PackgedTem" />
+          <ScalarProperty Name="PackgedNumber" ColumnName="PackgedNumber" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEPackgedQuality_Tablet">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEPackgedQuality_Tablet">
+        <MappingFragment StoreEntitySet="tblOEEPackgedQuality_Tablet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="PackgedTem" ColumnName="PackgedTem" />
+          <ScalarProperty Name="PackgedNumber" ColumnName="PackgedNumber" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEPOTs">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEPOT">
+        <MappingFragment StoreEntitySet="tblOEEPOT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="POTID" ColumnName="POTID" />
+          <ScalarProperty Name="POTFrom" ColumnName="POTFrom" />
+          <ScalarProperty Name="POTTo" ColumnName="POTTo" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="TypePOT" ColumnName="TypePOT" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEPOT_Tablet">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEPOT_Tablet">
+        <MappingFragment StoreEntitySet="tblOEEPOT_Tablet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="POTID" ColumnName="POTID" />
+          <ScalarProperty Name="POTFrom" ColumnName="POTFrom" />
+          <ScalarProperty Name="POTTo" ColumnName="POTTo" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="TypePOT" ColumnName="TypePOT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEQualities">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEQuality">
+        <MappingFragment StoreEntitySet="tblOEEQuality">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="QID" ColumnName="QID" />
+          <ScalarProperty Name="DEFECT" ColumnName="DEFECT" />
+          <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEQuality_Tablet">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEQuality_Tablet">
+        <MappingFragment StoreEntitySet="tblOEEQuality_Tablet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="QID" ColumnName="QID" />
+          <ScalarProperty Name="DEFECT" ColumnName="DEFECT" />
+          <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEQuality_Temp">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEQuality_Temp">
+        <MappingFragment StoreEntitySet="tblOEEQuality_Temp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="QID" ColumnName="QID" />
+          <ScalarProperty Name="DEFECT" ColumnName="DEFECT" />
+          <ScalarProperty Name="CompleteTime" ColumnName="CompleteTime" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEESeasons">
+      <EntityTypeMapping TypeName="OEEModel.tblOEESeason">
+        <MappingFragment StoreEntitySet="tblOEESeason">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEtemplates">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEtemplate">
+        <MappingFragment StoreEntitySet="tblOEEtemplate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="KGF" ColumnName="KGF" />
+          <ScalarProperty Name="EditKG" ColumnName="EditKG" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+          <ScalarProperty Name="TIFG" ColumnName="TIFG" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="EditST" ColumnName="EditST" />
+          <ScalarProperty Name="EditSE" ColumnName="EditSE" />
+          <ScalarProperty Name="STF" ColumnName="STF" />
+          <ScalarProperty Name="SEF" ColumnName="SEF" />
+          <ScalarProperty Name="CL" ColumnName="CL" />
+          <ScalarProperty Name="EditCL" ColumnName="EditCL" />
+          <ScalarProperty Name="SR" ColumnName="SR" />
+          <ScalarProperty Name="EditSR" ColumnName="EditSR" />
+          <ScalarProperty Name="CLF" ColumnName="CLF" />
+          <ScalarProperty Name="SRF" ColumnName="SRF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEETemplate_oll_TIF255">
+      <EntityTypeMapping TypeName="OEEModel.tblOEETemplate_oll_TIF255">
+        <MappingFragment StoreEntitySet="tblOEETemplate_oll TIF255">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEETemplate2">
+      <EntityTypeMapping TypeName="OEEModel.tblOEETemplate2">
+        <MappingFragment StoreEntitySet="tblOEETemplate2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="KGF" ColumnName="KGF" />
+          <ScalarProperty Name="EditKG" ColumnName="EditKG" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+          <ScalarProperty Name="TIFG" ColumnName="TIFG" />
+          <ScalarProperty Name="MPGroup" ColumnName="MPGroup" />
+          <ScalarProperty Name="TSequence" ColumnName="TSequence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEWorkAreas">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEWorkArea">
+        <MappingFragment StoreEntitySet="tblOEEWorkArea">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEWorkerLists">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEWorkerList">
+        <MappingFragment StoreEntitySet="tblOEEWorkerList">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPositions">
+      <EntityTypeMapping TypeName="OEEModel.tblPosition">
+        <MappingFragment StoreEntitySet="tblPosition">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPTablets">
+      <EntityTypeMapping TypeName="OEEModel.tblPTablet">
+        <MappingFragment StoreEntitySet="tblPTablet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PCode" ColumnName="PCode" />
+          <ScalarProperty Name="PDescription" ColumnName="PDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSetActionTPMs">
+      <EntityTypeMapping TypeName="OEEModel.tblSetActionTPM">
+        <MappingFragment StoreEntitySet="tblSetActionTPM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Hour" ColumnName="Hour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSetColorShots">
+      <EntityTypeMapping TypeName="OEEModel.tblSetColorShot">
+        <MappingFragment StoreEntitySet="tblSetColorShot">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Condition1" ColumnName="Condition1" />
+          <ScalarProperty Name="ShotValue1" ColumnName="ShotValue1" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="Condition2" ColumnName="Condition2" />
+          <ScalarProperty Name="ShotValue2" ColumnName="ShotValue2" />
+          <ScalarProperty Name="R" ColumnName="R" />
+          <ScalarProperty Name="G" ColumnName="G" />
+          <ScalarProperty Name="B" ColumnName="B" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSetListActionMCs">
+      <EntityTypeMapping TypeName="OEEModel.tblSetListActionMC">
+        <MappingFragment StoreEntitySet="tblSetListActionMC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ActionCode" ColumnName="ActionCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSetListPMs">
+      <EntityTypeMapping TypeName="OEEModel.tblSetListPM">
+        <MappingFragment StoreEntitySet="tblSetListPM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IDTime" ColumnName="IDTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSetPhases">
+      <EntityTypeMapping TypeName="OEEModel.tblSetPhase">
+        <MappingFragment StoreEntitySet="tblSetPhase">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSetShotPMMs">
+      <EntityTypeMapping TypeName="OEEModel.tblSetShotPMM">
+        <MappingFragment StoreEntitySet="tblSetShotPMM">
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="Shot" ColumnName="Shot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSettingMachines">
+      <EntityTypeMapping TypeName="OEEModel.tblSettingMachine">
+        <MappingFragment StoreEntitySet="tblSettingMachine">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSettingModes">
+      <EntityTypeMapping TypeName="OEEModel.tblSettingMode">
+        <MappingFragment StoreEntitySet="tblSettingMode">
+          <ScalarProperty Name="OEEDate" ColumnName="OEEDate" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="ModeID" ColumnName="ModeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSettingNoteMoldSetters">
+      <EntityTypeMapping TypeName="OEEModel.tblSettingNoteMoldSetter">
+        <MappingFragment StoreEntitySet="tblSettingNoteMoldSetter">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblShifts">
+      <EntityTypeMapping TypeName="OEEModel.tblShift">
+        <MappingFragment StoreEntitySet="tblShift">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblShiftTimes">
+      <EntityTypeMapping TypeName="OEEModel.tblShiftTime">
+        <MappingFragment StoreEntitySet="tblShiftTime">
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="ShiftTime" ColumnName="ShiftTime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTargets">
+      <EntityTypeMapping TypeName="OEEModel.tblTarget">
+        <MappingFragment StoreEntitySet="tblTarget">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTargetPeriods">
+      <EntityTypeMapping TypeName="OEEModel.tblTargetPeriod">
+        <MappingFragment StoreEntitySet="tblTargetPeriod">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTimes">
+      <EntityTypeMapping TypeName="OEEModel.tblTime">
+        <MappingFragment StoreEntitySet="tblTime">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTrackings">
+      <EntityTypeMapping TypeName="OEEModel.tblTracking">
+        <MappingFragment StoreEntitySet="tblTracking">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserTypes">
+      <EntityTypeMapping TypeName="OEEModel.tblUserType">
+        <MappingFragment StoreEntitySet="tblUserType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USERTYPECODE" ColumnName="USERTYPECODE" />
+          <ScalarProperty Name="USERTYPENAME" ColumnName="USERTYPENAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVersionTablets">
+      <EntityTypeMapping TypeName="OEEModel.tblVersionTablet">
+        <MappingFragment StoreEntitySet="tblVersionTablet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersMobiles">
+      <EntityTypeMapping TypeName="OEEModel.UsersMobile">
+        <MappingFragment StoreEntitySet="UsersMobile">
+          <ScalarProperty Name="Uid" ColumnName="Uid" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Usertype" ColumnName="Usertype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogErrorOEEs">
+      <EntityTypeMapping TypeName="OEEModel.LogErrorOEE">
+        <MappingFragment StoreEntitySet="LogErrorOEE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="StrCode" ColumnName="StrCode" />
+          <ScalarProperty Name="StrText" ColumnName="StrText" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="CODEID" ColumnName="CODEID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogStringOEEs">
+      <EntityTypeMapping TypeName="OEEModel.LogStringOEE">
+        <MappingFragment StoreEntitySet="LogStringOEE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="StrCode" ColumnName="StrCode" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogUserOEETablets">
+      <EntityTypeMapping TypeName="OEEModel.LogUserOEETablet">
+        <MappingFragment StoreEntitySet="LogUserOEETablet">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="TabletName" ColumnName="TabletName" />
+          <ScalarProperty Name="SeriNo" ColumnName="SeriNo" />
+          <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="System" ColumnName="System" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="OEEModel.Person">
+        <MappingFragment StoreEntitySet="People">
+          <ScalarProperty Name="idRecord" ColumnName="idRecord" />
+          <ScalarProperty Name="PersonName" ColumnName="PersonName" />
+          <ScalarProperty Name="PersonAge" ColumnName="PersonAge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RealTimeCT1N0ALL">
+      <EntityTypeMapping TypeName="OEEModel.RealTimeCT1N0ALL">
+        <MappingFragment StoreEntitySet="RealTimeCT1N0ALL">
+          <ScalarProperty Name="AutoNumber" ColumnName="AutoNumber" />
+          <ScalarProperty Name="MCOrder" ColumnName="MCOrder" />
+          <ScalarProperty Name="St" ColumnName="St" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+          <ScalarProperty Name="F010" ColumnName="F010" />
+          <ScalarProperty Name="F011" ColumnName="F011" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShiftModes">
+      <EntityTypeMapping TypeName="OEEModel.ShiftMode">
+        <MappingFragment StoreEntitySet="ShiftMode">
+          <ScalarProperty Name="Pkey" ColumnName="Pkey" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblitemcolortests">
+      <EntityTypeMapping TypeName="OEEModel.tblitemcolortest">
+        <MappingFragment StoreEntitySet="tblitemcolortest">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblitemsizetests">
+      <EntityTypeMapping TypeName="OEEModel.tblitemsizetest">
+        <MappingFragment StoreEntitySet="tblitemsizetest">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLogs">
+      <EntityTypeMapping TypeName="OEEModel.tblLog">
+        <MappingFragment StoreEntitySet="tblLog">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEBOD_Top3">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEBOD_Top3">
+        <MappingFragment StoreEntitySet="tblOEEBOD_Top3">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEBOD2_Top3">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEBOD2_Top3">
+        <MappingFragment StoreEntitySet="tblOEEBOD2_Top3">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEECals">
+      <EntityTypeMapping TypeName="OEEModel.tblOEECal">
+        <MappingFragment StoreEntitySet="tblOEECal">
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="O" ColumnName="O" />
+          <ScalarProperty Name="A" ColumnName="A" />
+          <ScalarProperty Name="P" ColumnName="P" />
+          <ScalarProperty Name="Q" ColumnName="Q" />
+          <ScalarProperty Name="Output" ColumnName="Output" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+          <ScalarProperty Name="Downtime" ColumnName="Downtime" />
+          <ScalarProperty Name="Defect" ColumnName="Defect" />
+          <ScalarProperty Name="DefectRatio" ColumnName="DefectRatio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEDTActions">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEDTAction">
+        <MappingFragment StoreEntitySet="tblOEEDTAction">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEHeaders">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEHeader">
+        <MappingFragment StoreEntitySet="tblOEEHeader">
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="OEEDate" ColumnName="OEEDate" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="ShiftName" ColumnName="ShiftName" />
+          <ScalarProperty Name="ModeID" ColumnName="ModeID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="BarrelID" ColumnName="BarrelID" />
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="IID" ColumnName="IID" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="CTS" ColumnName="CTS" />
+          <ScalarProperty Name="CTM" ColumnName="CTM" />
+          <ScalarProperty Name="PRI" ColumnName="PRI" />
+          <ScalarProperty Name="CoID" ColumnName="CoID" />
+          <ScalarProperty Name="CoID2" ColumnName="CoID2" />
+          <ScalarProperty Name="CoID3" ColumnName="CoID3" />
+          <ScalarProperty Name="SiID" ColumnName="SiID" />
+          <ScalarProperty Name="SiID2" ColumnName="SiID2" />
+          <ScalarProperty Name="SiID3" ColumnName="SiID3" />
+          <ScalarProperty Name="SiID4" ColumnName="SiID4" />
+          <ScalarProperty Name="SiID5" ColumnName="SiID5" />
+          <ScalarProperty Name="MSN" ColumnName="MSN" />
+          <ScalarProperty Name="PPS" ColumnName="PPS" />
+          <ScalarProperty Name="PPP" ColumnName="PPP" />
+          <ScalarProperty Name="Opr1" ColumnName="Opr1" />
+          <ScalarProperty Name="Opr2" ColumnName="Opr2" />
+          <ScalarProperty Name="Opr3" ColumnName="Opr3" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Trim2" ColumnName="Trim2" />
+          <ScalarProperty Name="QC" ColumnName="QC" />
+          <ScalarProperty Name="QC2" ColumnName="QC2" />
+          <ScalarProperty Name="ProdTL" ColumnName="ProdTL" />
+          <ScalarProperty Name="ProdTL2" ColumnName="ProdTL2" />
+          <ScalarProperty Name="TrimTL" ColumnName="TrimTL" />
+          <ScalarProperty Name="TrimTL2" ColumnName="TrimTL2" />
+          <ScalarProperty Name="QCTL" ColumnName="QCTL" />
+          <ScalarProperty Name="OEER" ColumnName="OEER" />
+          <ScalarProperty Name="CELL" ColumnName="CELL" />
+          <ScalarProperty Name="MProcess" ColumnName="MProcess" />
+          <ScalarProperty Name="SQT" ColumnName="SQT" />
+          <ScalarProperty Name="Opr4" ColumnName="Opr4" />
+          <ScalarProperty Name="Opr5" ColumnName="Opr5" />
+          <ScalarProperty Name="Trim3" ColumnName="Trim3" />
+          <ScalarProperty Name="Trim4" ColumnName="Trim4" />
+          <ScalarProperty Name="Phase" ColumnName="Phase" />
+          <ScalarProperty Name="CurrentTime" ColumnName="CurrentTime" />
+          <ScalarProperty Name="TrimTime" ColumnName="TrimTime" />
+          <ScalarProperty Name="TrimDesc" ColumnName="TrimDesc" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="package_quality" ColumnName="package_quality" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEHeader_Tablet">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEHeader_Tablet">
+        <MappingFragment StoreEntitySet="tblOEEHeader_Tablet">
+          <ScalarProperty Name="OEEID" ColumnName="OEEID" />
+          <ScalarProperty Name="OEEDate" ColumnName="OEEDate" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="ShiftName" ColumnName="ShiftName" />
+          <ScalarProperty Name="ModeID" ColumnName="ModeID" />
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="BarrelID" ColumnName="BarrelID" />
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="IID" ColumnName="IID" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="CTS" ColumnName="CTS" />
+          <ScalarProperty Name="CTM" ColumnName="CTM" />
+          <ScalarProperty Name="PRI" ColumnName="PRI" />
+          <ScalarProperty Name="CoID" ColumnName="CoID" />
+          <ScalarProperty Name="CoID2" ColumnName="CoID2" />
+          <ScalarProperty Name="CoID3" ColumnName="CoID3" />
+          <ScalarProperty Name="SiID" ColumnName="SiID" />
+          <ScalarProperty Name="SiID2" ColumnName="SiID2" />
+          <ScalarProperty Name="SiID3" ColumnName="SiID3" />
+          <ScalarProperty Name="SiID4" ColumnName="SiID4" />
+          <ScalarProperty Name="SiID5" ColumnName="SiID5" />
+          <ScalarProperty Name="MSN" ColumnName="MSN" />
+          <ScalarProperty Name="PPS" ColumnName="PPS" />
+          <ScalarProperty Name="PPP" ColumnName="PPP" />
+          <ScalarProperty Name="Opr1" ColumnName="Opr1" />
+          <ScalarProperty Name="Opr2" ColumnName="Opr2" />
+          <ScalarProperty Name="Opr3" ColumnName="Opr3" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Trim2" ColumnName="Trim2" />
+          <ScalarProperty Name="QC" ColumnName="QC" />
+          <ScalarProperty Name="QC2" ColumnName="QC2" />
+          <ScalarProperty Name="ProdTL" ColumnName="ProdTL" />
+          <ScalarProperty Name="ProdTL2" ColumnName="ProdTL2" />
+          <ScalarProperty Name="TrimTL" ColumnName="TrimTL" />
+          <ScalarProperty Name="TrimTL2" ColumnName="TrimTL2" />
+          <ScalarProperty Name="QCTL" ColumnName="QCTL" />
+          <ScalarProperty Name="OEER" ColumnName="OEER" />
+          <ScalarProperty Name="CELL" ColumnName="CELL" />
+          <ScalarProperty Name="MProcess" ColumnName="MProcess" />
+          <ScalarProperty Name="SQT" ColumnName="SQT" />
+          <ScalarProperty Name="Opr4" ColumnName="Opr4" />
+          <ScalarProperty Name="Opr5" ColumnName="Opr5" />
+          <ScalarProperty Name="Trim3" ColumnName="Trim3" />
+          <ScalarProperty Name="Trim4" ColumnName="Trim4" />
+          <ScalarProperty Name="Phase" ColumnName="Phase" />
+          <ScalarProperty Name="CurrentTime" ColumnName="CurrentTime" />
+          <ScalarProperty Name="TrimTime" ColumnName="TrimTime" />
+          <ScalarProperty Name="TrimDesc" ColumnName="TrimDesc" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="package_quality" ColumnName="package_quality" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEETargets">
+      <EntityTypeMapping TypeName="OEEModel.tblOEETarget">
+        <MappingFragment StoreEntitySet="tblOEETarget">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="T009" ColumnName="T009" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEtemplate_hoanc">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEtemplate_hoanc">
+        <MappingFragment StoreEntitySet="tblOEEtemplate_hoanc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="KGF" ColumnName="KGF" />
+          <ScalarProperty Name="EditKG" ColumnName="EditKG" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+          <ScalarProperty Name="TIFG" ColumnName="TIFG" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="EditST" ColumnName="EditST" />
+          <ScalarProperty Name="EditSE" ColumnName="EditSE" />
+          <ScalarProperty Name="STF" ColumnName="STF" />
+          <ScalarProperty Name="SEF" ColumnName="SEF" />
+          <ScalarProperty Name="CL" ColumnName="CL" />
+          <ScalarProperty Name="EditCL" ColumnName="EditCL" />
+          <ScalarProperty Name="SR" ColumnName="SR" />
+          <ScalarProperty Name="EditSR" ColumnName="EditSR" />
+          <ScalarProperty Name="CLF" ColumnName="CLF" />
+          <ScalarProperty Name="SRF" ColumnName="SRF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEtemplate_L_New">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEtemplate_L_New">
+        <MappingFragment StoreEntitySet="tblOEEtemplate_L_New">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="KGF" ColumnName="KGF" />
+          <ScalarProperty Name="EditKG" ColumnName="EditKG" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+          <ScalarProperty Name="TIFG" ColumnName="TIFG" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="EditST" ColumnName="EditST" />
+          <ScalarProperty Name="EditSE" ColumnName="EditSE" />
+          <ScalarProperty Name="STF" ColumnName="STF" />
+          <ScalarProperty Name="SEF" ColumnName="SEF" />
+          <ScalarProperty Name="CL" ColumnName="CL" />
+          <ScalarProperty Name="EditCL" ColumnName="EditCL" />
+          <ScalarProperty Name="SR" ColumnName="SR" />
+          <ScalarProperty Name="EditSR" ColumnName="EditSR" />
+          <ScalarProperty Name="CLF" ColumnName="CLF" />
+          <ScalarProperty Name="SRF" ColumnName="SRF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEETemplate_PAF">
+      <EntityTypeMapping TypeName="OEEModel.tblOEETemplate_PAF">
+        <MappingFragment StoreEntitySet="tblOEETemplate_PAF">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEETemplate_1">
+      <EntityTypeMapping TypeName="OEEModel.tblOEETemplate_1">
+        <MappingFragment StoreEntitySet="tblOEETemplate-1">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="KGF" ColumnName="KGF" />
+          <ScalarProperty Name="EditKG" ColumnName="EditKG" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+          <ScalarProperty Name="TIFG" ColumnName="TIFG" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="EditST" ColumnName="EditST" />
+          <ScalarProperty Name="EditSE" ColumnName="EditSE" />
+          <ScalarProperty Name="STF" ColumnName="STF" />
+          <ScalarProperty Name="SEF" ColumnName="SEF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEETemplate_old">
+      <EntityTypeMapping TypeName="OEEModel.tblOEETemplate_old">
+        <MappingFragment StoreEntitySet="tblOEETemplate-old">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="DTGroup" ColumnName="DTGroup" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="TI" ColumnName="TI" />
+          <ScalarProperty Name="TIF" ColumnName="TIF" />
+          <ScalarProperty Name="EditTI" ColumnName="EditTI" />
+          <ScalarProperty Name="SH" ColumnName="SH" />
+          <ScalarProperty Name="SHF" ColumnName="SHF" />
+          <ScalarProperty Name="EditSH" ColumnName="EditSH" />
+          <ScalarProperty Name="KG" ColumnName="KG" />
+          <ScalarProperty Name="KGF" ColumnName="KGF" />
+          <ScalarProperty Name="EditKG" ColumnName="EditKG" />
+          <ScalarProperty Name="PA" ColumnName="PA" />
+          <ScalarProperty Name="PAF" ColumnName="PAF" />
+          <ScalarProperty Name="EditPA" ColumnName="EditPA" />
+          <ScalarProperty Name="PI" ColumnName="PI" />
+          <ScalarProperty Name="PIF" ColumnName="PIF" />
+          <ScalarProperty Name="EditPI" ColumnName="EditPI" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SPosition" ColumnName="SPosition" />
+          <ScalarProperty Name="RPosition" ColumnName="RPosition" />
+          <ScalarProperty Name="TIFG" ColumnName="TIFG" />
+          <ScalarProperty Name="DTFrom" ColumnName="DTFrom" />
+          <ScalarProperty Name="DTTo" ColumnName="DTTo" />
+          <ScalarProperty Name="EditST" ColumnName="EditST" />
+          <ScalarProperty Name="EditSE" ColumnName="EditSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOEEVolumes">
+      <EntityTypeMapping TypeName="OEEModel.tblOEEVolume">
+        <MappingFragment StoreEntitySet="tblOEEVolume">
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+          <ScalarProperty Name="F004" ColumnName="F004" />
+          <ScalarProperty Name="F005" ColumnName="F005" />
+          <ScalarProperty Name="F006" ColumnName="F006" />
+          <ScalarProperty Name="F007" ColumnName="F007" />
+          <ScalarProperty Name="F008" ColumnName="F008" />
+          <ScalarProperty Name="F009" ColumnName="F009" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQLDetail1">
+      <EntityTypeMapping TypeName="OEEModel.tblQLDetail1">
+        <MappingFragment StoreEntitySet="tblQLDetail1">
+          <ScalarProperty Name="IID" ColumnName="IID" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="CVal" ColumnName="CVal" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AmountYTD" ColumnName="AmountYTD" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Times">
+      <EntityTypeMapping TypeName="OEEModel.Time">
+        <MappingFragment StoreEntitySet="Times">
+          <ScalarProperty Name="Pkey" ColumnName="Pkey" />
+          <ScalarProperty Name="F000" ColumnName="F000" />
+          <ScalarProperty Name="F001" ColumnName="F001" />
+          <ScalarProperty Name="F002" ColumnName="F002" />
+          <ScalarProperty Name="F003" ColumnName="F003" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmpTLBDs">
+      <EntityTypeMapping TypeName="OEEModel.tmpTLBD">
+        <MappingFragment StoreEntitySet="tmpTLBD">
+          <ScalarProperty Name="OEEDate" ColumnName="OEEDate" />
+          <ScalarProperty Name="C" ColumnName="C" />
+          <ScalarProperty Name="CVal" ColumnName="CVal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="OEEModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.Comp_Table" FunctionImportName="Comp_Table">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.Comp_Table_Result">
+          <ScalarProperty Name="Comp" ColumnName="Comp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.CONVERT_LIST_TO_TABLE" FunctionImportName="CONVERT_LIST_TO_TABLE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.CONVERT_LIST_TO_TABLE_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.fn_Split" FunctionImportName="fn_Split">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.fn_Split_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.fn_Split_var" FunctionImportName="fn_Split_var">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.fn_Split_var_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.fn_SplitSpace" FunctionImportName="fn_SplitSpace">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.fn_SplitSpace_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.fnSplitString" FunctionImportName="fnSplitString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.fnSplitString_Result">
+          <ScalarProperty Name="splitdata" ColumnName="splitdata" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.fun_Split" FunctionImportName="fun_Split">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.fun_Split_Result">
+          <ScalarProperty Name="Items" ColumnName="Items" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.Get_List_Category" FunctionImportName="Get_List_Category">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.Get_List_Category_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="OEEModel.Store.UTL_DateAddWorkingDays_Inner" FunctionImportName="UTL_DateAddWorkingDays_Inner">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OEEModel.UTL_DateAddWorkingDays_Inner_Result">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
