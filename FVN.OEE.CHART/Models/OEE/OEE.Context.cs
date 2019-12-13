@@ -28,7 +28,7 @@ namespace FVN.OEE.CHART.Models.OEE
         }
     
     
-        public virtual int OEE1v2(Nullable<System.DateTime> v_FROMDATE, Nullable<System.DateTime> v_TODATE, string v_CATEGORYID, string v_CustomerID, string v_USERID, Nullable<int> v_Phase)
+        public virtual int EXP_RAWDATA(Nullable<System.DateTime> v_FROMDATE, Nullable<System.DateTime> v_TODATE, string v_IID, string v_USERID)
         {
             var v_FROMDATEParameter = v_FROMDATE.HasValue ?
                 new ObjectParameter("V_FROMDATE", v_FROMDATE) :
@@ -38,23 +38,61 @@ namespace FVN.OEE.CHART.Models.OEE
                 new ObjectParameter("V_TODATE", v_TODATE) :
                 new ObjectParameter("V_TODATE", typeof(System.DateTime));
     
-            var v_CATEGORYIDParameter = v_CATEGORYID != null ?
-                new ObjectParameter("V_CATEGORYID", v_CATEGORYID) :
-                new ObjectParameter("V_CATEGORYID", typeof(string));
-    
-            var v_CustomerIDParameter = v_CustomerID != null ?
-                new ObjectParameter("V_CustomerID", v_CustomerID) :
-                new ObjectParameter("V_CustomerID", typeof(string));
+            var v_IIDParameter = v_IID != null ?
+                new ObjectParameter("V_IID", v_IID) :
+                new ObjectParameter("V_IID", typeof(string));
     
             var v_USERIDParameter = v_USERID != null ?
                 new ObjectParameter("V_USERID", v_USERID) :
                 new ObjectParameter("V_USERID", typeof(string));
     
-            var v_PhaseParameter = v_Phase.HasValue ?
-                new ObjectParameter("V_Phase", v_Phase) :
-                new ObjectParameter("V_Phase", typeof(int));
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("EXP_RAWDATA", v_FROMDATEParameter, v_TODATEParameter, v_IIDParameter, v_USERIDParameter);
+        }
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("OEE1v2", v_FROMDATEParameter, v_TODATEParameter, v_CATEGORYIDParameter, v_CustomerIDParameter, v_USERIDParameter, v_PhaseParameter);
+        public virtual int OEE4_Sub0(Nullable<System.DateTime> v_FROMDATE, Nullable<System.DateTime> v_TODATE, string v_IID, string v_USERID, string v_Phase)
+        {
+            var v_FROMDATEParameter = v_FROMDATE.HasValue ?
+                new ObjectParameter("V_FROMDATE", v_FROMDATE) :
+                new ObjectParameter("V_FROMDATE", typeof(System.DateTime));
+    
+            var v_TODATEParameter = v_TODATE.HasValue ?
+                new ObjectParameter("V_TODATE", v_TODATE) :
+                new ObjectParameter("V_TODATE", typeof(System.DateTime));
+    
+            var v_IIDParameter = v_IID != null ?
+                new ObjectParameter("V_IID", v_IID) :
+                new ObjectParameter("V_IID", typeof(string));
+    
+            var v_USERIDParameter = v_USERID != null ?
+                new ObjectParameter("V_USERID", v_USERID) :
+                new ObjectParameter("V_USERID", typeof(string));
+    
+            var v_PhaseParameter = v_Phase != null ?
+                new ObjectParameter("v_Phase", v_Phase) :
+                new ObjectParameter("v_Phase", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("OEE4_Sub0", v_FROMDATEParameter, v_TODATEParameter, v_IIDParameter, v_USERIDParameter, v_PhaseParameter);
+        }
+    
+        public virtual int sp_Chart(Nullable<System.DateTime> v_FROMDATE, Nullable<System.DateTime> v_TODATE, string v_IID, string v_USERID)
+        {
+            var v_FROMDATEParameter = v_FROMDATE.HasValue ?
+                new ObjectParameter("V_FROMDATE", v_FROMDATE) :
+                new ObjectParameter("V_FROMDATE", typeof(System.DateTime));
+    
+            var v_TODATEParameter = v_TODATE.HasValue ?
+                new ObjectParameter("V_TODATE", v_TODATE) :
+                new ObjectParameter("V_TODATE", typeof(System.DateTime));
+    
+            var v_IIDParameter = v_IID != null ?
+                new ObjectParameter("V_IID", v_IID) :
+                new ObjectParameter("V_IID", typeof(string));
+    
+            var v_USERIDParameter = v_USERID != null ?
+                new ObjectParameter("V_USERID", v_USERID) :
+                new ObjectParameter("V_USERID", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_Chart", v_FROMDATEParameter, v_TODATEParameter, v_IIDParameter, v_USERIDParameter);
         }
     }
 }
