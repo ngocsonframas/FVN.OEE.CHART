@@ -6,6 +6,12 @@
     <Parameter Name="V_IID" Type="varchar" Mode="In" />
     <Parameter Name="V_USERID" Type="varchar" Mode="In" />
   </Function>
+  <Function Name="OEE16_Chart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="V_FROMDATE" Type="datetime" Mode="In" />
+    <Parameter Name="V_TODATE" Type="datetime" Mode="In" />
+    <Parameter Name="V_CATEGORYID" Type="varchar" Mode="In" />
+    <Parameter Name="V_USERID" Type="nvarchar" Mode="In" />
+  </Function>
   <Function Name="OEE4_Sub0" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="V_FROMDATE" Type="datetime" Mode="In" />
     <Parameter Name="V_TODATE" Type="datetime" Mode="In" />

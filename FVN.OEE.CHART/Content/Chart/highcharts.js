@@ -419,7 +419,7 @@
                 enabled: !0, href: "https://www.highcharts.com?credits", position: { align: "right", x: -10, verticalAlign: "bottom", y: -5 }, style: {
                     cursor: "pointer", color: "#999999",
                     fontSize: "9px"
-                }, text: "Highcharts.com"
+                }, text: "OEE FVN"
             }
         }; c.setOptions = function (f) { c.defaultOptions = F(!0, c.defaultOptions, f); (f.time || f.global) && c.time.update(F(c.defaultOptions.global, c.defaultOptions.time, f.global, f.time)); return c.defaultOptions }; c.getOptions = function () { return c.defaultOptions }; c.defaultPlotOptions = c.defaultOptions.plotOptions; c.time = new c.Time(F(c.defaultOptions.global, c.defaultOptions.time)); c.dateFormat = function (f, z, B) { return c.time.dateFormat(f, z, B) }; ""
     }); M(I, "parts/Tick.js", [I["parts/Globals.js"],

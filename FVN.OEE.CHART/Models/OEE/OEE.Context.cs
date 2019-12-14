@@ -94,5 +94,26 @@ namespace FVN.OEE.CHART.Models.OEE
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_Chart", v_FROMDATEParameter, v_TODATEParameter, v_IIDParameter, v_USERIDParameter);
         }
+    
+        public virtual int OEE16_Chart(Nullable<System.DateTime> v_FROMDATE, Nullable<System.DateTime> v_TODATE, string v_CATEGORYID, string v_USERID)
+        {
+            var v_FROMDATEParameter = v_FROMDATE.HasValue ?
+                new ObjectParameter("V_FROMDATE", v_FROMDATE) :
+                new ObjectParameter("V_FROMDATE", typeof(System.DateTime));
+    
+            var v_TODATEParameter = v_TODATE.HasValue ?
+                new ObjectParameter("V_TODATE", v_TODATE) :
+                new ObjectParameter("V_TODATE", typeof(System.DateTime));
+    
+            var v_CATEGORYIDParameter = v_CATEGORYID != null ?
+                new ObjectParameter("V_CATEGORYID", v_CATEGORYID) :
+                new ObjectParameter("V_CATEGORYID", typeof(string));
+    
+            var v_USERIDParameter = v_USERID != null ?
+                new ObjectParameter("V_USERID", v_USERID) :
+                new ObjectParameter("V_USERID", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("OEE16_Chart", v_FROMDATEParameter, v_TODATEParameter, v_CATEGORYIDParameter, v_USERIDParameter);
+        }
     }
 }

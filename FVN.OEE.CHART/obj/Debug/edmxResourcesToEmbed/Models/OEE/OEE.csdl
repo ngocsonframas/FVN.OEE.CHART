@@ -20,5 +20,11 @@
       <Parameter Name="V_IID" Mode="In" Type="String" />
       <Parameter Name="V_USERID" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="OEE16_Chart">
+      <Parameter Name="V_FROMDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_TODATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_CATEGORYID" Mode="In" Type="String" />
+      <Parameter Name="V_USERID" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
 </Schema>
