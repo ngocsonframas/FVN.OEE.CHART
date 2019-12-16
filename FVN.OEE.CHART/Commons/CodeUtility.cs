@@ -293,5 +293,34 @@ namespace FVN.OEE.CHART.Commons
             }
 
         }
+        
+    }
+
+    public static class ConvertUtility
+    {
+        /// <summary>
+        /// Trả về ngày cuối cùng của tháng
+        /// </summary>
+        /// <param name="dateTime"></param>
+        /// <returns></returns>
+        public static DateTime ConvertLastDate(DateTime dateTime)
+        {
+            return new DateTime(dateTime.Year, dateTime.Month, DateTime.DaysInMonth(dateTime.Year, dateTime.Month));
+        }
+
+        /// <summary>
+        /// Trả về ngày đầu tiên của tháng
+        /// </summary>
+        /// <param name="dateTime"></param>
+        /// <returns></returns>
+        public static DateTime ConvertFirtsDate(this DateTime dateTime)
+        {
+            return new DateTime(dateTime.Year, dateTime.Month, 1);
+        }
+
+        public static double ConvertPercen(double digit)
+        {
+            return (digit / 100);
+        }
     }
 }
