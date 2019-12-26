@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VNT86ModelStoreContainer" CdmEntityContainer="VNT86Entities">
+    <FunctionImportMapping FunctionImportName="sp_FinanceDAByProduct" FunctionName="VNT86Model.Store.sp_FinanceDAByProduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="VNT86Model.sp_FinanceDAByProduct_Result">
+          <ScalarProperty Name="C032" ColumnName="C032" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="AmoQty" ColumnName="AmoQty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_FinanceDAGet" FunctionName="VNT86Model.Store.sp_FinanceDAGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="VNT86Model.sp_FinanceDAGet_Result">
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="AmoQty" ColumnName="AmoQty" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OEEModelStoreContainer" CdmEntityContainer="Entities">
+    <FunctionImportMapping FunctionImportName="EXP_RAWDATA" FunctionName="OEEModel.Store.EXP_RAWDATA" />
+    <FunctionImportMapping FunctionImportName="OEE4_Sub0" FunctionName="OEEModel.Store.OEE4_Sub0" />
+    <FunctionImportMapping FunctionImportName="sp_Chart" FunctionName="OEEModel.Store.sp_Chart" />
+    <FunctionImportMapping FunctionImportName="OEE16_Chart" FunctionName="OEEModel.Store.OEE16_Chart" />
+  </EntityContainerMapping>
+</Mapping>

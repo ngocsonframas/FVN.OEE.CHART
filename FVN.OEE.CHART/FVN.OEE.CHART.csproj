@@ -316,6 +316,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Chart\accessibility.js" />
     <Content Include="Content\Chart\chart.js" />
     <Content Include="Content\Chart\date.format.js" />
     <Content Include="Content\Chart\global.js" />
@@ -371,6 +372,7 @@
       <DependentUpon>OEE.edmx</DependentUpon>
     </Content>
     <Content Include=".editorconfig" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Content\Chart\export-data.js" />
     <Content Include="Content\Chart\exporting.js" />

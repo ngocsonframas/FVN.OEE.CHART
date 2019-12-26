@@ -20,7 +20,21 @@ namespace FVN.OEE.CHART
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/Content/Chart/highcharts.js",
+                      "~/Content/Chart/highcharts-more.js",
+                      "~/Content/Chart/exporting.js",
+                      "~/Content/Chart/export-data.js",
+                      "~/Content/Chart/accessibility.js"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/Content/Chart").Include(
+                      "~/Content/Chart/highcharts.js",
+                      "~/Content/Chart/highcharts-more.js",
+                      "~/Content/Chart/exporting.js",
+                      "~/Content/Chart/export-data.js",
+                      "~/Content/Chart/accessibility.js"
+                      ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

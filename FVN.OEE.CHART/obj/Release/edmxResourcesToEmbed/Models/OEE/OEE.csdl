@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OEEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="EXP_RAWDATA">
+      <Parameter Name="V_FROMDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_TODATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_IID" Mode="In" Type="String" />
+      <Parameter Name="V_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="OEE4_Sub0">
+      <Parameter Name="V_FROMDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_TODATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_IID" Mode="In" Type="String" />
+      <Parameter Name="V_USERID" Mode="In" Type="String" />
+      <Parameter Name="v_Phase" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Chart">
+      <Parameter Name="V_FROMDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_TODATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_IID" Mode="In" Type="String" />
+      <Parameter Name="V_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="OEE16_Chart">
+      <Parameter Name="V_FROMDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_TODATE" Mode="In" Type="DateTime" />
+      <Parameter Name="V_CATEGORYID" Mode="In" Type="String" />
+      <Parameter Name="V_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
