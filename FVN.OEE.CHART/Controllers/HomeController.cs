@@ -1,38 +1,37 @@
 ﻿using FramasVietNam.Common;
 using FVN.OEE.CHART.Commons;
-using FVN.OEE.CHART.Models;
 using FVN.OEE.CHART.Models.OEE;
-using FVN.OEE.CHART.Models.VNT86;
 using FVN.OEE.CHART.ViewModels;
-using Lime.Protocol.Network;
-using MSharp.Framework;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
+using System.Threading.Tasks;
 using System.Web.Mvc;
+
 namespace FVN.OEE.CHART.Controllers
 {
-    public  class HomeController : Controller
+    public class HomeController : Controller
     {
         #region Variabal connect string
-        private OEEEntities db_OEE = new OEEEntities();
-        #endregion Variabal connect string\
 
-        public ActionResult Index()
+        private OEEEntities db_OEE = new OEEEntities();
+
+        #endregion Variabal connect string
+
+        public async Task<ActionResult> Index()
         {
-            GetDataPlantOEE();
-            GetDataMainPro();
-            GetDataHC();
+            await GetDataPlantOEE();
+            await GetDataMainPro();
+            await GetDataHC();
             return View();
         }
 
         //GET DATA CHART PLANT OEE & A, P, Q
-        public JsonResult GetDataPlantOEE()
-       {
+        public async Task<JsonResult> GetDataPlantOEE()
+        {
             bool status = false;
             try
             {
@@ -55,7 +54,7 @@ namespace FVN.OEE.CHART.Controllers
                     string[] paraValue = { fromDate, toDate, "0", "nnson" };
 
                     //Dùng DataSet để lấy dữ liệu dưới store procedure
-                    DataSet _dataSet = dataOperation.GetDataSet(GlobalVariable.DBOEE, procName, paramName, paraValue);
+                    DataSet _dataSet =dataOperation.GetDataSet(GlobalVariable.DBOEE, procName, paramName, paraValue);
                     if (_dataSet.Tables.Count > 0)
                     {
                         //Dùng DataTable để lấy dữ liệu table 1 từ data set
@@ -83,7 +82,7 @@ namespace FVN.OEE.CHART.Controllers
                             category = item.ItemArray[5].ToString();
 
                             //Vì theo y/c của Ms.Quyên không lấy những Category có tên là Sample và Logo
-                            if (!category.Contains("Sample")  && !category.Contains("Logo"))
+                            if (!category.Contains("Sample") && !category.Contains("Logo"))
                             {
                                 //Get data from list array
                                 OTz4 = Math.Round(mFunction.ToDouble(item.ItemArray[0].ToString()), 2);
@@ -136,19 +135,19 @@ namespace FVN.OEE.CHART.Controllers
         }
 
         //GET DATA CHART MAIN PRODUCTION
-        public JsonResult GetDataMainPro()
+        public async Task<JsonResult> GetDataMainPro()
         {
-            bool  status     = false;
+            bool status = false;
             //Ngày bắt đầu trước ngày hiện tại 1 ngày
             string fromDate = DateTime.Now.AddHours(-6).ToString("yyyy-MM-dd HH:mm:ss");
             //Ngày kết thúc là lấy thời gian hiện tại
-            string toDate   = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            string toDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             //Store Proceudure Name
             string procName = "sp_EXP_RAWDATA_CHART";
             string category = string.Empty;
-            string user     = User.Identity.Name;
+            string user = User.Identity.Name;
 
-            double  sumOTz4 = 0;
+            double sumOTz4 = 0;
             double sumPPT3 = 0;
             double sumNOT4 = 0;
             double sumQCG = 0;
@@ -174,6 +173,7 @@ namespace FVN.OEE.CHART.Controllers
             string[] paraValue = { fromDate, toDate, "0", user };
 
             #region HEEL COUNTER
+
             double A_HC = 0;
             double P_HC = 0;
             double Q_HC = 0;
@@ -184,7 +184,8 @@ namespace FVN.OEE.CHART.Controllers
             double sumQCG_HC = 0;
             double sumBOutput_HC = 0;
             double OEE_HC = 0;
-            #endregion
+
+            #endregion HEEL COUNTER
 
             try
             {
@@ -194,7 +195,6 @@ namespace FVN.OEE.CHART.Controllers
                     DataTable dt1 = _dataSet.Tables[0];
                     List<DataPoint> dataPointsMainProd = new List<DataPoint>();
                     var list = dt1.Select().AsQueryable().ToList();
-                    //ViewBag.dataPointsLine = DataTableToJsonObj(dt1);
                     foreach (var item in list)
                     {
                         category = item.ItemArray[5].ToString();
@@ -238,6 +238,7 @@ namespace FVN.OEE.CHART.Controllers
                     }
 
                     #region Calculate SUM A,P, Q
+
                     if (sumOTz4 != null)
                     {
                         A = sumOTz4 / sumPPT3 * 100;
@@ -265,9 +266,11 @@ namespace FVN.OEE.CHART.Controllers
                         }
                         ViewBag.Quality = Math.Round(Q, 2);
                     }
-                    #endregion
+
+                    #endregion Calculate SUM A,P, Q
 
                     #region Calculate SUM OEE HEEL COUNTER
+
                     if (sumOTz4 != null)
                     {
                         A_HC = sumOTz4_HC / sumPPT3_HC * 100;
@@ -299,9 +302,11 @@ namespace FVN.OEE.CHART.Controllers
                     {
                         ViewBag.OEE_HC = Math.Round(OEE_HC, 2);
                     }
-                    #endregion
+
+                    #endregion Calculate SUM OEE HEEL COUNTER
 
                     #region Calculate SUM OEE Main Production
+
                     if (sumOTz4_MainProd != null)
                     {
                         A_MainProd = sumOTz4_MainProd / sumPPT3_MainProd * 100;
@@ -338,8 +343,8 @@ namespace FVN.OEE.CHART.Controllers
                     {
                         ViewBag.OEE = Math.Round(OEE, 2);
                     }
-                    #endregion
 
+                    #endregion Calculate SUM OEE Main Production
                 }
             }
             catch (Exception ex)
@@ -350,7 +355,7 @@ namespace FVN.OEE.CHART.Controllers
         }
 
         //GET DATA CHART HEEL COUNTER
-        public JsonResult GetDataHC()
+        public async Task<JsonResult> GetDataHC()
         {
             bool status = false;
             //Proc Name
@@ -359,13 +364,13 @@ namespace FVN.OEE.CHART.Controllers
             string category = string.Empty;
             string user = User.Identity.Name;
 
-            //Data chart 
+            //Data chart
             string nameArburg = "arburg";
             string nameEngel‎ = "engel‎‎";
 
             double sumArburg = 0;
             double sumEngel‎ = 0;
-            double sumTWN‎   = 0;
+            double sumTWN‎ = 0;
 
             double avgArburg = 0;
             double avgEngel‎ = 0;
@@ -380,7 +385,7 @@ namespace FVN.OEE.CHART.Controllers
             //Ngày kết thúc là lấy thời gian hiện tại
             string toDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             string[] paramName = { "v_FROMDATE", "v_TODATE", "V_CATEGORYID", "v_USERID" };
-            string[] paraValue = { fromDate, toDate, "001", "nnson"};
+            string[] paraValue = { fromDate, toDate, "001", "nnson" };
             try
             {
                 DataSet _dataSet = dataOperation.GetDataSet(GlobalVariable.DBOEE, procName, paramName, paraValue);
@@ -407,7 +412,6 @@ namespace FVN.OEE.CHART.Controllers
                             sumTWN += mFunction.ToDouble(item.ItemArray[1].ToString()); ;
                             z++;
                         }
-
                     }
                     avgArburg = sumArburg / i;
                     avgEngel = sumEngel / j;
