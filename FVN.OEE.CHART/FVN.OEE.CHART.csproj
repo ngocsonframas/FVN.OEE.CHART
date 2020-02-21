@@ -282,6 +282,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OEE.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\OEE\TableNameViewModels.cs" />
     <Compile Include="Models\VNT86\sp_FinanceDAByProduct_Result.cs">
       <DependentUpon>VNT86.tt</DependentUpon>
     </Compile>

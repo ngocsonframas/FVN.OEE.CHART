@@ -51,7 +51,7 @@ namespace FVN.OEE.CHART.Controllers
                     //Thời gian bắt đầu tính từ thời gian hiện tại trừ đi 6h
                     string fromDate = DateTime.Now.AddHours(-(i + 6)).ToString("yyyy-MM-dd HH:mm:ss");
                     string toDate = DateTime.Now.AddHours(-i).ToString("yyyy-MM-dd HH:mm:ss");
-                    string[] paraValue = { fromDate, toDate, "0", "nnson" };
+                    string[] paraValue = { fromDate, toDate, "0", user };
 
                     //Dùng DataSet để lấy dữ liệu dưới store procedure
                     DataSet _dataSet =dataOperation.GetDataSet(GlobalVariable.DBOEE, procName, paramName, paraValue);
@@ -271,7 +271,7 @@ namespace FVN.OEE.CHART.Controllers
 
                     #region Calculate SUM OEE HEEL COUNTER
 
-                    if (sumOTz4 != null)
+                    if (sumOTz4_HC != null)
                     {
                         A_HC = sumOTz4_HC / sumPPT3_HC * 100;
                         if (Double.IsNaN(A_HC) || Double.IsInfinity(A_HC))
@@ -385,7 +385,7 @@ namespace FVN.OEE.CHART.Controllers
             //Ngày kết thúc là lấy thời gian hiện tại
             string toDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             string[] paramName = { "v_FROMDATE", "v_TODATE", "V_CATEGORYID", "v_USERID" };
-            string[] paraValue = { fromDate, toDate, "001", "nnson" };
+            string[] paraValue = { fromDate, toDate, "001", user };
             try
             {
                 DataSet _dataSet = dataOperation.GetDataSet(GlobalVariable.DBOEE, procName, paramName, paraValue);

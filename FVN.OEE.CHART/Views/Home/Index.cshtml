@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "OEE CHART";
     System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
     var dataTime = serializer.Serialize(ViewBag.Time);
     var dataOEE = serializer.Serialize(ViewBag.Data);
@@ -337,7 +337,7 @@
                 type: 'gauge',
             },
             title: {
-                text: '<h1><b>Performance</b></h1>'
+                text: '<h1><b>PERFORMANCE</b></h1>'
             },
             pane: {
                 startAngle: -150,
@@ -417,7 +417,7 @@
                 type: 'gauge',
             },
             title: {
-                text: '<h1><b>Quality</b></h1>'
+                text: '<h1><b>QUALITY</b></h1>'
             },
             pane: {
                 startAngle: -150,
